@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Vigor - Fitness & Workout App PWA HTML</title>
+	<link rel="icon" href="assets/images/favicon/icon.png">
+	<link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/all.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/media-query.css">
+</head>
+<body>
+	<div class="site-content">
+		<!-- Preloader start -->
+		<div class="preloader">
+			<img src="assets/images/favicon/preloader.gif" alt="preloader">
+		</div>
+		<!-- Preloader end -->
+		<!-- Workout complete screen start -->
+		<div class="workout-complete-content pb-80" id="workout-complete-main">
+			<div class="container">
+				<div class="workout-complete-main-top pt-32">
+					<div class="text-center bg-img">
+						<img src="assets/images/main-img/cup-img.png" alt="workout-img">
+					</div>
+					<div class="contact-txt mt-32">
+						<h1>CONGRATULATIONS!</h1>
+						<p class="sm-font-sans fw-400 text-center mt-12">You’ve completed the workout!
+						</p>
+					</div>
+					<div class="workout-complete-details mt-32">
+						<div class="workout-wrap">
+							<div class="workout-first border text-center">
+								<img src="assets/images/workout-complete/workout.png" alt="workout-img">
+								<h2>7</h2>
+								<p>Workouts</p>
+							</div>
+							<div class="workout-first border text-center">
+								<img src="assets/images/workout-complete/minutes.png" alt="minutes-img">
+								<h2>90</h2>
+								<p>minutes</p>
+							</div>
+							<div class="workout-first border text-center">
+								<img src="assets/images/workout-complete/kcal.png" alt="kcal-img">
+								<h2>300</h2>
+								<p>kcal</p>
+							</div>
+						</div>
+					</div>
+					<div class="workout-bottom-btn">
+						<div class="workout-bottom-btn-wrap">
+							<div class="home-btn">
+								<a href="homescreen.html">GO HOME</a>
+							</div>
+							<div class="report-btn">
+								<a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#workout-complete-modal">MY REPORT</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Workout complete screen end -->
+		<!-- Modal start -->
+		<div class="modal fade" id="workout-complete-modal" tabindex="-1"  aria-hidden="true">
+			<div class="modal-dialog ">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="account-upgrade-remind text-center" >
+							<img src="assets/images/workout-complete/upgrade.png" alt="upgrade-img">
+							<h3 class="md-font-sans fw-500 color-black pt-16">Unlock Premium Benefits!</h3>
+							<p class="p-0 mt-8">Upgrade to Vigor premium to unlocks even more amazing benefits to supercharge your fitness journey.</p>
+							<div class="border mt-24"></div>
+
+							<div class="workout-bottom-btn-wrap mt-24">
+								<div class="home-btn">
+									<a href="javascript:void(0)">NOT NOW</a>
+								</div>
+								<div class="report-btn">
+									<a href="account-upgrade-plan.html">UPGRADE</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal end -->
+	</div>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+</body>
+</html>

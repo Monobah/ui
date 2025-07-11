@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Vigor - Fitness & Workout App PWA HTML</title>
+	<link rel="icon" href="assets/images/favicon/icon.png">
+	<link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/all.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/media-query.css">
+</head>
+<body>
+	<div class="site-content">
+		<!-- Preloader start -->
+		<div class="preloader">
+			<img src="assets/images/favicon/preloader.gif" alt="preloader">
+		</div>
+		<!-- Preloader end -->
+		<!-- Header start -->
+		<header id="top-header">
+			<div class="header-wrap">
+				<div class="header-back">
+					<a href="javascript:history.go(-1)">
+						<img src="assets/svg/black-left-arrow.svg" alt="back-btn-icon">
+					</a>
+				</div>
+				<div class="header-name">
+					<p class="sm-font-zen fw-400">delete or deactivate</p>
+				</div>
+			</div>
+		</header>
+		<!-- Header end -->
+		<!-- Delete deactive account screen start -->
+		<div class="verify-email pb-100" id="delete-deactivate-main">
+			<div class="container">
+				<div class="delete-deactivate-content">
+					<h1 class="d-none">Delete deactive</h1>
+					<div class="delete-content border-bottom">
+						<p class="sm-font-sans fw-400 text-center mt-16">If you want to leave Vigor temporarily, simply deactivate your account. If you choose to delete your account instead, you won’t be able to recover it after 30 days.</p>
+					</div>
+					<form id="deleteDeactivateForm">
+						<div class="form-check px-0 custom-radio active border mt-16">
+							<input class="form-check-input" type="radio" name="action" id="shipping1" value="deactivate" checked>
+							<label class="form-check-label checkout-modal-lbl" for="shipping1">
+								Deactivate Account
+								<span class="mt-8">No one can see your account, including all content that is stored in it. Reactivate your account and recover all content anytime.</span>
+							</label>
+						</div>
+						<div class="form-check px-0 custom-radio border mt-16">
+							<input class="form-check-input" type="radio" name="action" id="shipping2" value="delete">
+							<label class="form-check-label checkout-modal-lbl" for="shipping2">
+								Delete Account Permanently	
+								<span class="mt-8">Your account and content will be deleted permanently. You may cancel the deletion request by reactivating your account within 30 days.</span>
+							</label>
+						</div>
+					</form>	
+					
+					<div class="password-btn bottom-fixed" onclick="continueAction()">
+						<a onclick="continueAction()" href="javascript:void(0)">Continue</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Delete deactive account screen end -->
+	</div>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+</body>
+</html>

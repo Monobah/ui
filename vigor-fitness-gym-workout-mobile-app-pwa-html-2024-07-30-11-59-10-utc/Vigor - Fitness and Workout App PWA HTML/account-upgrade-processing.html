@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Vigor - Fitness & Workout App PWA HTML</title>
+	<link rel="icon" href="assets/images/favicon/icon.png">
+	<link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/all.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/media-query.css">
+</head>
+<body>
+	<div class="site-content">
+		<!-- Preloader start -->
+		<div class="preloader">
+			<img src="assets/images/favicon/preloader.gif" alt="preloader">
+		</div>
+		<!-- Preloader end -->
+		<!-- Header start -->
+		<header id="top-header">
+			<div class="header-wrap">
+				<div class="header-back">
+					<a href="javascript:history.go(-1)">
+						<img src="assets/svg/black-left-arrow.svg" alt="back-btn-icon">
+					</a>
+				</div>
+				<div class="header-name">
+					<p class="sm-font-zen fw-400">REVIEW SUMMARY</p>
+				</div>
+			</div>
+		</header>
+		<!-- Header end -->
+		<!-- Account upgrade processing screen start -->
+		<div class="verify-email pb-100" id="account-upgrade-processing-main">
+			<div class="container">
+				<div class="account-upgrade-processing-main-wrap mt-16">
+					<div class="billling-subscription-details">
+						<div class="popular">
+							<p>Most Popular</p>
+						</div>
+						<div class="popular-padding pt-0">
+							<div class="billing-price">
+								<p>Vigor Premium</p>
+								<h1 class="mt-8">$9.99<span>/month</span></h1>
+								<div class="white-border mt-24"></div>
+							</div>
+							<div class="billing-description mt-16">
+								<ul class="point-list">
+									<li>Unlock the entire library of workouts, including premium programs.</li>
+									<li class="mt-12">Personalized workout plans based on fitness goals.</li>
+									<li class="mt-12">Ad-free experience.</li>
+									<li class="mt-12">Advanced workout statistics and tracking.</li>
+									<li class="mt-12">Exclusive access to new features and content.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="account-upgrade-processing-bottom mt-24">
+						<div class="account-bottom">
+							<div class="account-type-upgrade ">
+								<h2 class="text-start">PAYMENT MODE</h2>
+							</div>
+							<div class="account-back">
+								<a href="payment-method.html">
+									<span>Change</span>
+									<span><img src="assets/svg/right-arrow.svg" alt="edit-icon"></span>
+								</a>
+							</div>
+						</div>
+						<div class="delete-account-bottom p-0 mt-16">
+							<div class="bank-img">
+								<img src="assets/images/payment/payment2.png" alt="bank-icon">
+							</div>
+							<div class="bank-details">
+								<h2>MasterCard</h2>
+								<div class="bank-card">
+									<span>Active </span>
+									<span>| Card Number **** 7887</span>
+								</div>
+							</div>
+						</div>
+						<div class="password-btn bottom-fixed bottom-fixed1">
+							<a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#account-upgrade-modal">CONFIRM PAYMENT - $9.99</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Account upgrade processing screen end -->
+		<!-- Modal content start -->
+		<div class="modal fade" id="account-upgrade-modal" tabindex="-1"  aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="finger-content-sec">
+							<div class="loaders">
+								<div class="sk-fading-circle">
+									<div class="sk-circle1 sk-circle"></div>
+									<div class="sk-circle2 sk-circle"></div>
+									<div class="sk-circle3 sk-circle"></div>
+									<div class="sk-circle4 sk-circle"></div>
+									<div class="sk-circle5 sk-circle"></div>
+									<div class="sk-circle6 sk-circle"></div>
+									<div class="sk-circle7 sk-circle"></div>
+									<div class="sk-circle8 sk-circle"></div>
+									<div class="sk-circle9 sk-circle"></div>
+									<div class="sk-circle10 sk-circle"></div>
+									<div class="sk-circle11 sk-circle"></div>
+									<div class="sk-circle12 sk-circle"></div>
+								</div>
+							</div>
+							<p class="md-font-sans fw-500 color-black text-center mt-16">Processing Payment</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal content end -->
+	</div>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+	<script>
+		$(document).ready(function() {
+			$(document).on('click', '.password-btn', function() {
+				$('#account-upgrade-modal').modal('show');
+				setTimeout(function() {
+					window.location.href = "upgrade-confirmation.html"; 
+				}, 2000);
+			});
+		});
+	</script>
+</body>
+</html>

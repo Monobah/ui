@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Vigor - Fitness & Workout App PWA HTML</title>
+	<link rel="icon" href="assets/images/favicon/icon.png">
+	<link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/all.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/media-query.css">
+</head>
+<body>
+	<div class="site-content">
+		<!-- Preloader start -->
+		<div class="preloader">
+			<img src="assets/images/favicon/preloader.gif" alt="preloader">
+		</div>
+		<!-- Preloader end -->
+		<!-- Header start -->
+		<header id="top-header" class="border-0">
+			<div class="header-wrap">
+				<div class="header-back previous action-button-previous input-icon-previous hidden-text-button" >
+					<a href="select-gender.html">
+						<img src="assets/svg/black-left-arrow.svg" alt="back-btn-icon">
+					</a>
+				</div>
+			</div>
+		</header>
+		<!-- Header end -->
+		<!-- Select gender content start -->
+		<div class="verify-email pb-100" id="select-gender-main">
+			<div class="select-gender-wrap">
+				<form id="msform" class="mt-16">
+					<div class="progress-container">
+						<div class="progress-bar" id="progress-bar">1/10</div>
+					</div>
+					<fieldset class="mt-24 container">
+						<div class="select-gender-first">
+							<div class="first-focus-content">
+								<h1>Select your gender</h1>
+								<p class="sm-font-sans fw-400 text-center mt-12">Help us understand you better.</p>
+							</div>
+							<div class="gender-select mt-32">
+								<div id="male" class="gender-option" onclick="selectGender('male')">
+									<img id="male-img" src="assets/images/select-gender/male.png" alt="Male" width="80">
+								</div>
+								<div id="female" class="gender-option selected-img" onclick="selectGender('female')">
+									<img id="female-img" src="assets/images/select-gender/female.png" alt="Female" width="80">
+								</div>
+							</div>
+							<div class="multistep-form-btn">
+								<div class="skip-btn-form next action-button input-icon-next hidden-text-button next-page">
+									<a href="javascript:void(0)">Skip</a>
+								</div>
+								<div class="continue-btn-form next action-button input-icon-next hidden-text-button next-page" >
+									<a href="javascript:void(0)" class="text-white">Continue</a>
+								</div>
+							</div>
+						</div>
+					</fieldset>
+					<fieldset class="mt-24">
+						<div class="second-focus-system">
+							<div class="first-focus-content mt-24">
+								<h2>Choose your focus</h2>
+								<p class="sm-font-sans fw-400 text-center mt-12">Tell us which part of your body you’d like to focus on during your workouts.</p>
+							</div>
+							<div class="mt-16">
+								<ul class="nav nav-tabs" id="myTab" role="tablist">
+									<li class="nav-item" role="presentation">
+										<button class="nav-link " id="shoulders-tab" data-bs-toggle="tab" data-bs-target="#shoulders" type="button" role="tab" aria-controls="shoulders" aria-selected="true">Shoulders</button>
+									</li>
+									<li class="nav-item" role="presentation">
+										<button class="nav-link active" id="chest-tab" data-bs-toggle="tab" data-bs-target="#chest" type="button" role="tab" aria-controls="chest" aria-selected="false">Chest</button>
+									</li>
+									<li class="nav-item" role="presentation">
+										<button class="nav-link" id="arms-tab" data-bs-toggle="tab" data-bs-target="#arms" type="button" role="tab" aria-controls="arms" aria-selected="false">Arms</button>
+									</li>
+									<li class="nav-item" role="presentation">
+										<button class="nav-link" id="back-tab" data-bs-toggle="tab" data-bs-target="#back" type="button" role="tab" aria-controls="back" aria-selected="false">Back</button>
+									</li>
+									<li class="nav-item" role="presentation">
+										<button class="nav-link" id="stomach-tab" data-bs-toggle="tab" data-bs-target="#stomach" type="button" role="tab" aria-controls="stomach" aria-selected="false">Stomach</button>
+									</li>
+									<li class="nav-item" role="presentation">
+										<button class="nav-link" id="legs-tab" data-bs-toggle="tab" data-bs-target="#legs" type="button" role="tab" aria-controls="legs" aria-selected="false">Legs</button>
+									</li>
+								</ul>
+								<div class="tab-content mt-32" id="myTabContent">
+									<div class="tab-pane " id="shoulders" role="tabpanel">
+										<div class="body-tab-main-wrap">
+											<img src="assets/images/select-gender/shoulder.png" alt="Shoulder">
+											<img src="assets/images/select-gender/chest.png" alt="Chest">	
+										</div>
+									</div>
+									<div class="tab-pane active" id="chest" role="tabpanel">
+										<div class="body-tab-main-wrap">
+											<img src="assets/images/select-gender/shoulder.png" alt="Shoulder">
+											<img src="assets/images/select-gender/chest.png" alt="Chest">
+											<img src="assets/images/select-gender/arms.png" alt="Arms">
+										</div>
+									</div>
+									<div class="tab-pane" id="arms" role="tabpanel">
+										<div class="body-tab-main-wrap">
+											<img src="assets/images/select-gender/shoulder.png" alt="Shoulder">
+											<img src="assets/images/select-gender/chest.png" alt="Chest">
+											<img src="assets/images/select-gender/arms.png" alt="Arms">
+										</div>
+									</div>
+									<div class="tab-pane" id="back" role="tabpanel">
+										<div class="body-tab-main-wrap">
+											<img src="assets/images/select-gender/chest.png" alt="Chest">
+											<img src="assets/images/select-gender/back.png" alt="Back">
+											<img src="assets/images/select-gender/stomach.png" alt="Stomach">
+										</div>
+									</div>
+									<div class="tab-pane" id="stomach" role="tabpanel">
+										<div class="body-tab-main-wrap">
+											<img src="assets/images/select-gender/back.png" alt="Back">
+											<img src="assets/images/select-gender/stomach.png" alt="Stomach">
+											<img src="assets/images/select-gender/legs.png" alt="Legs">
+										</div>
+									</div>
+									<div class="tab-pane" id="legs" role="tabpanel">
+										<div class="body-tab-main-wrap">
+											<img src="assets/images/select-gender/stomach.png" alt="Stomach">
+											<img src="assets/images/select-gender/legs.png" alt="Legs">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="multistep-form-btn">
+								<div class="skip-btn-form next action-button input-icon-next hidden-text-button next-page">
+									<a href="javascript:void(0)">Skip</a>
+								</div>
+								<div class="continue-btn-form next action-button input-icon-next hidden-text-button next-page" >
+									<a href="javascript:void(0)" class="text-white">Continue</a>
+								</div>
+							</div>
+						</div>
+					</fieldset> 
+					<fieldset>
+						<div class="third-age-sec">
+							<div class="first-focus-content mt-24">
+								<h2>Enter your age</h2>
+								<p class="sm-font-sans fw-400 text-center mt-12">Your age helps us design suitable workouts.</p>
+							</div>
+							<div class="age-picker-container mt-24">
+								<div class="age-picker"></div>
+								<div class="selected-age-display">Age: <span id="selected-age">28</span></div>
+							</div>
+							<div class="multistep-form-btn">
+								<div class="skip-btn-form next action-button input-icon-next hidden-text-button next-page" >
+									<a href="javascript:void(0)">Skip</a>
+								</div>
+								<div class="continue-btn-form next action-button input-icon-next hidden-text-button next-page" >
+									<a href="javascript:void(0)" class="text-white">Continue</a>
+								</div>
+							</div>
+						</div>
+					</fieldset> 
+					<fieldset>
+						<div class="fourth-weight">
+							<div class="first-focus-content mt-24">
+								<h2>Enter your height</h2>
+								<p class="sm-font-sans fw-400 text-center mt-12">Please provide your height in centimeters.</p>
+							</div>
+							<div class="age-picker-container mt-24">
+								<div class="height-picker"></div>
+								<div class="selected-age-display">Age: <span id="selected-height">100</span></div>
+							</div>
+							<div class="multistep-form-btn">
+								<div class="skip-btn-form next action-button input-icon-next hidden-text-button next-page" >
+									<a href="javascript:void(0)">Skip</a>
+								</div>
+								<div class="continue-btn-form next action-button input-icon-next hidden-text-button next-page" >
+									<a href="javascript:void(0)" class="text-white">Continue</a>
+								</div>
+							</div>
+						</div>
+					</fieldset> 
+					<fieldset>
+						<div class="first-focus-content mt-24">
+							<h2>Enter your Weight</h2>
+							<p class="sm-font-sans fw-400 text-center mt-12">Please provide your weight in kilograms.</p>
+						</div>
+						<div class="weight-picker-container mt-24">
+							<div class="weight-picker"></div>
+							<div class="selected-weight-display">Weight: <span id="selected-weight">70</span> kg</div>
+						</div>
+						<div class="multistep-form-btn">
+							<div class="skip-btn-form next action-button input-icon-next hidden-text-button next-page" >
+								<a href="javascript:void(0)">Skip</a>
+							</div>
+							<div class="continue-btn-form next action-button input-icon-next hidden-text-button next-page" >
+								<a href="javascript:void(0)" class="text-white">Continue</a>
+							</div>
+						</div>
+					</fieldset>
+					<fieldset>
+						<div class="activity-level container">
+							<div class="first-focus-content mt-24">
+								<h2>Select Activity Level</h2>
+								<p class="sm-font-sans fw-400 text-center mt-12">Tell us about your daily activity level to tailor your workouts accordingly.</p>
+							</div>
+							<div class="activity-level-wrap mt-24">
+								<div class="option text-start" id="activity1">
+									<div class="activity-icon">
+										<img src="assets/images/select-gender/activity1.png" alt="activity-img">
+									</div>
+									<div class="activity-details text-start">
+										<h3>Sedentary</h3>
+										<p>Little to no exercise</p>
+									</div>
+								</div>
+								<div class="option mt-8 text-start" id="activity2">
+									<div class="activity-icon">
+										<img src="assets/images/select-gender/activity2.png" alt="activity-img"> 
+									</div>
+									<div class="activity-details text-start">
+										<h3>Lightly Active</h3>
+										<p>Exercise or sports 1-3 days a week</p>
+									</div>
+								</div>
+								<div class="option selected mt-8 text-start " id="activity3" >
+									<div class="activity-icon">
+										<img src="assets/images/select-gender/activity3.png" alt="activity-img">
+									</div>
+									<div class="activity-details text-start">
+										<h3>Moderately Active</h3>
+										<p>Exercise or sports 3-5 days a week</p>
+									</div>
+								</div>
+								<div class="option mt-8 text-start" id="activity4">
+									<div class="activity-icon">
+										<img src="assets/images/select-gender/activity4.png" alt="activity-img">
+									</div>
+									<div class="activity-details text-start">
+										<h3>Very Active</h3>
+										<p>Exercise or sports 6-7 days a week</p>
+									</div>
+								</div>
+								<div class="option mt-8 text-start" id="activity5">
+									<div class="activity-icon">
+										<img src="assets/images/select-gender/activity5.png" alt="activity-img">
+									</div>
+									<div class="activity-details text-start">
+										<h3>Athlete</h3>
+										<p>Physical job or training twice a day</p>
+									</div>
+								</div>
+							</div>
+							<div class="multistep-form-btn">
+								<div class="skip-btn-form next action-button input-icon-next hidden-text-button next-page" >
+									<a href="javascript:void(0)">Skip</a>
+								</div>
+								<div class="continue-btn-form next action-button input-icon-next hidden-text-button next-page" >
+									<a href="javascript:void(0)" class="text-white">Continue</a>
+								</div>
+							</div>
+						</div>
+					</fieldset> 
+					<fieldset>
+						<div class="workout-goal-sec container">
+							<div class="first-focus-content mt-24">
+								<h2>Your workout goal</h2>
+								<p class="sm-font-sans fw-400 text-center mt-12">What’s your primary fitness goal? We’ll create a plan to help you achieve it.</p>
+							</div>
+							<div class="activity-level-wrap mt-24">
+								<div class="option" id="goal1">
+									<div class="activity-icon">
+										<img src="assets/images/select-gender/goal1.png" alt="goal-img">
+									</div>
+									<div class="activity-details text-start">
+										<h3>Lose Weight</h3>
+									</div>
+								</div>
+								<div class="option mt-8 selected" id="goal2">
+									<div class="activity-icon">
+										<img src="assets/images/select-gender/goal2.png" alt="goal-img">
+									</div>
+									<div class="activity-details text-start">
+										<h3>Build Muscle</h3>
+									</div>
+								</div>
+								<div class="option  mt-8" id="goal3">
+									<div class="activity-icon">
+										<img src="assets/images/select-gender/goal3.png" alt="goal-img">
+									</div>
+									<div class="activity-details text-start">
+										<h3>Stay Fit</h3>
+									</div>
+								</div>
+								<div class="option mt-8" id="goal4">
+									<div class="activity-icon">
+										<img src="assets/images/select-gender/goal4.png" alt="goal-img">
+									</div>
+									<div class="activity-details text-start">
+										<h3>Other Goal</h3>
+									</div>
+								</div>
+							</div>
+							<div class="multistep-form-btn">
+								<div class="skip-btn-form next action-button input-icon-next hidden-text-button next-page">
+									<a href="javascript:void(0)">Skip</a>
+								</div>
+								<div class="continue-btn-form next action-button input-icon-next hidden-text-button next-page" >
+									<a href="javascript:void(0)" class="text-white">Continue</a>
+								</div>
+							</div>
+						</div>
+					</fieldset> 
+					<fieldset >
+						<div class="fourth-motivation container">
+							<div class="first-focus-content mt-24">
+								<h2>Choose Motivation</h2>
+								<p class="sm-font-sans fw-400 text-center mt-12">Select your main source of motivation to keep you enthusiastic about your fitness journey.</p>
+							</div>
+							<div class="workout-goal-wrap mt-24">
+								<div class="goal" id="motivation1">
+									<div class="activity-icon">
+										<img src="assets/images/select-gender/motivation1.png" alt="motivation-img">
+									</div>
+									<div class="activity-details text-start">
+										<h3>Health & Wellness</h3>
+									</div>
+								</div>
+								<div class="goal mt-8 selected" id="motivation2">
+									<div class="activity-icon">
+										<img src="assets/images/select-gender/motivation2.png" alt="motivation-img">
+									</div>
+									<div class="activity-details text-start">
+										<h3>Strength & Endurance</h3>
+									</div>
+								</div>
+								<div class="goal mt-8 selected" id="motivation3">
+									<div class="activity-icon">
+										<img src="assets/images/select-gender/motivation3.png" alt="motivation-img">
+									</div>
+									<div class="activity-details text-start">
+										<h3>Confidence Boost</h3>
+									</div>
+								</div>
+								<div class="goal mt-8" id="motivation4">
+									<div class="activity-icon">
+										<img src="assets/images/select-gender/motivation4.png" alt="motivation-img">
+									</div>
+									<div class="activity-details text-start">
+										<h3>Social Support</h3>
+									</div>
+								</div>
+								<div class="goal mt-8" id="motivation5">
+									<div class="activity-icon">
+										<img src="assets/images/select-gender/motivation5.png" alt="motivation-img">
+									</div>
+									<div class="activity-details text-start">
+										<h3>Weight Loss</h3>
+									</div>
+								</div>
+							</div>
+							<div class="multistep-form-btn">
+								<div class="skip-btn-form next action-button input-icon-next hidden-text-button next-page">
+									<a href="javascript:void(0)">Skip</a>
+								</div>
+								<div class="continue-btn-form next action-button input-icon-next hidden-text-button next-page" >
+									<a href="javascript:void(0)" class="text-white">Continue</a>
+								</div>
+							</div>
+						</div>
+					</fieldset> 
+					<fieldset>
+						<div class="push-up-sec container">
+							<div class="first-focus-content mt-24">
+								<h2>How many push-ups can you do?</h2>
+								<p class="sm-font-sans fw-400 text-center mt-12">Help us measure your fitness level by telling us how many push-ups you can do at one time.</p>
+							</div>
+							<div class="workout-goal-wrap mt-24">
+								<div class="option" id="option1">
+									<div class="activity-icon">
+										<img src="assets/images/select-gender/beginner.png" alt="push-up-img">
+									</div>
+									<div class="activity-details text-start">
+										<h3>Beginner</h3>
+										<p>1 - 10 push-ups</p>
+									</div>
+								</div>
+								<div class="option mt-8 selected" id="option2">
+									<div class="activity-icon">
+										<img src="assets/images/select-gender/Intermediate.png" alt="push-up-img">
+									</div>
+									<div class="activity-details text-start">
+										<h3>Intermediate</h3>
+										<p>11 - 20 push-ups</p>
+									</div>
+								</div>
+								<div class="option mt-8" id="option3">
+									<div class="activity-icon">
+										<img src="assets/images/select-gender/advanced.png" alt="push-up-img">
+									</div>
+									<div class="activity-details text-start">
+										<h3>Advanced</h3>
+										<p>20 - 40 push-ups</p>
+									</div>
+								</div>
+								<div class="option mt-8" id="option4">
+									<div class="activity-icon">
+										<img src="assets/images/select-gender/athlete.png" alt="push-up-img">
+									</div>
+									<div class="activity-details text-start">
+										<h3>Athlete</h3>
+										<p>40+ push-ups</p>
+									</div>
+								</div>
+							</div>
+							<div class="multistep-form-btn">
+								<div class="skip-btn-form next action-button input-icon-next hidden-text-button next-page">
+									<a href="javascript:void(0)">Skip</a>
+								</div>
+								<div class="continue-btn-form next action-button input-icon-next hidden-text-button next-page" >
+									<a href="javascript:void(0)" class="text-white">Continue</a>
+								</div>
+							</div>
+						</div>
+					</fieldset> 
+					<fieldset>
+						<div class="third-age-sec">
+							<div class="first-focus-content mt-24">
+								<h2>Select your weekly workout plan</h2>
+								<p class="sm-font-sans fw-400 text-center mt-12">How often do you plan to workout each week?
+								We’ll create a schedule for you.</p>
+							</div>
+							<div class="day-picker-container mt-24">
+								<div class="day-picker"></div>
+							</div>
+							<div class="multistep-form-btn">
+								<div class="skip-btn-form">
+									<a href="personalized-plan.html">Skip</a>
+								</div>
+								<div class="continue-btn-form">
+									<a href="personalized-plan.html" class="text-white">Continue</a>
+								</div>
+							</div>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<!-- Select gender content end -->
+	</div>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/form.js"></script>
+	<script src="assets/js/custom.js"></script>
+	<script src="assets/js/piker.js"></script>
+	<script>
+		$(document).ready(function() {
+			function updateImages() {
+				const tabOrder = ['shoulder', 'chest', 'arms', 'back', 'stomach', 'legs'];
+				const activeTabId = $('.nav-tabs .nav-link.active').attr('id').split('-')[0];
+				const activeIndex = tabOrder.indexOf(activeTabId);
+				const prevIndex = (activeIndex - 1 + tabOrder.length) % tabOrder.length;
+				const nextIndex = (activeIndex + 1) % tabOrder.length;
+				$('.tab-pane').each(function() {
+					const paneId = $(this).attr('id');
+					if (paneId === tabOrder[activeIndex]) {
+						$(this).find('img').eq(0).attr('src', `assets/images/select-gender/${tabOrder[prevIndex]}.png`);
+						$(this).find('img').eq(1).attr('src', `assets/images/select-gender/${tabOrder[activeIndex]}.png`);
+						$(this).find('img').eq(2).attr('src', `assets/images/select-gender/${tabOrder[nextIndex]}.png`);
+					}
+				});
+			}
+
+	    // Initial call to set images
+	    updateImages();
+
+	    // Delegate click event to .nav-tabs element
+	    $('.nav-tabs').on('click', '.nav-link', function () {
+	    	$('.nav-tabs .nav-link').removeClass('active');
+	    	$(this).addClass('active');
+
+	    	$('.tab-pane').removeClass('active');
+	    	const target = $(this).data('bs-target');
+	    	$(target).addClass('active');
+
+	    	updateImages();
+	    });
+	});
+</script>
+</body>
+</html>

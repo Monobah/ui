@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Vigor - Fitness & Workout App PWA HTML</title>
+	<link rel="icon" href="assets/images/favicon/icon.png">
+	<link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/all.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/media-query.css">
+</head>
+<body>
+	<div class="site-content">
+		<!-- Preloader start -->
+		<div class="preloader">
+			<img src="assets/images/favicon/preloader.gif" alt="preloader">
+		</div>
+		<!-- Preloader end -->
+		<!-- Header start -->
+		<header id="top-header">
+			<div class="header-wrap">
+				<div class="header-back">
+					<a href="javascript:history.go(-1)">
+						<img src="assets/svg/black-left-arrow.svg" alt="back-btn-icon">
+					</a>
+				</div>
+				<div class="header-name">
+					<p class="sm-font-zen fw-400">SEARCH</p>
+				</div>
+			</div>
+		</header>
+		<!-- Header end -->
+		<!-- Workout search screen start -->
+		<div class="verify-email pb-20" id="wokout-search-main">
+			<div class="container">
+				<div class="wokout-category1 mt-16">
+					<h1 class="d-none">Hidden</h1>
+					<div class="serachbar-homepage2 mt-16">
+						<div class="input-group search-page-searchbar ">
+							<span class="input-group-text search-iconn">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M10.9395 1.9313C5.98074 1.9313 1.94141 5.97063 1.94141 10.9294C1.94141 15.8881 5.98074 19.9353 10.9395 19.9353C13.0575 19.9353 15.0054 19.193 16.5449 17.9606L20.293 21.7067C20.4821 21.888 20.7347 21.988 20.9967 21.9854C21.2587 21.9827 21.5093 21.8775 21.6947 21.6924C21.8801 21.5073 21.9856 21.2569 21.9886 20.9949C21.9917 20.7329 21.892 20.4802 21.7109 20.2908L17.9629 16.5427C19.1963 15.0008 19.9395 13.0498 19.9395 10.9294C19.9395 5.97063 15.8982 1.9313 10.9395 1.9313ZM10.9395 3.93134C14.8173 3.93134 17.9375 7.05153 17.9375 10.9294C17.9375 14.8072 14.8173 17.9352 10.9395 17.9352C7.06162 17.9352 3.94141 14.8072 3.94141 10.9294C3.94141 7.05153 7.06162 3.93134 10.9395 3.93134Z" fill="black"></path>
+								</svg>
+							</span>
+							<input type="search" placeholder="Search Here" class="form-control search-text-result" id="search-input">
+						</div>
+					</div>
+					<div class="workout-searchs-bottom mt-16">
+						<ul class="nav nav-pills gym-type-tab" id="gym-type-content" role="tablist">
+							<li class="nav-item" role="presentation">
+								<button class="nav-link package-btn active" id="all-tab" data-bs-toggle="pill" data-bs-target="#all" type="button" role="tab" aria-selected="false" tabindex="-1">All</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link package-btn" id="beginner-tab" data-bs-toggle="pill" data-bs-target="#beginner" type="button" role="tab" aria-selected="false" tabindex="-1">Beginner</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link package-btn " id="intermediate-tab" data-bs-toggle="pill" data-bs-target="#intermediate" type="button" role="tab" aria-selected="true">Intermediate</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link package-btn" id="advanced-tab" data-bs-toggle="pill" data-bs-target="#advanced" type="button" role="tab" aria-selected="false" tabindex="-1">Advanced</button>
+							</li>
+						</ul>
+						<div class="tab-content mt-24" id="workout-searchtab">
+							<div class="tab-pane active " id="all" role="tabpanel" tabindex="0" >
+								<div class="workout-preference-first p-0 ">
+									<div class="verify-email-img-sec">
+										<div class="main-img-bottom1">
+											<img src="assets/images/workout-category/up-img.svg" alt="notification-img">
+										</div>
+										<div class="main-img-top">
+											<img src="assets/images/workout-category/chest1.png" alt="notification-img">
+										</div> 	
+										<div class="main-img-bottom">
+											<img src="assets/images/workout-category/down-img.svg" alt="notification-img">
+										</div>
+									</div> 
+									<div class="workout-time">
+										<h2 class="sm-font-sans fw-700 color-black">Chest Chiseler</h2>
+										<p class="mt-8">30 minutes - Intermediate</p>
+									</div>
+									<div class="workout-btn">
+										<a href="javascript:void(0)"><img src="assets/svg/right-arrow.svg" alt="right-arrow"></a>
+									</div>
+								</div>
+								<div class="workout-preference-first p-0 mt-16">
+									<div class="verify-email-img-sec">
+										<div class="main-img-bottom1">
+											<img src="assets/images/workout-category/up-img.svg" alt="notification-img">
+										</div>
+										<div class="main-img-top">
+											<img src="assets/images/workout-category/chest2.png" alt="notification-img">
+										</div> 	
+										<div class="main-img-bottom">
+											<img src="assets/images/workout-category/down-img.svg" alt="notification-img">
+										</div>
+									</div> 				
+									<div class="workout-time">
+										<h2 class="sm-font-sans fw-700 color-black">Strong Chest Blitz</h2>
+										<p class="mt-8">45 minutes - Advanced</p>
+									</div>
+									<div class="workout-btn">
+										<a href="javascript:void(0)"><img src="assets/svg/right-arrow.svg" alt="right-arrow"></a>
+									</div>
+								</div>
+								<div class="workout-preference-first p-0 mt-16">
+									<div class="verify-email-img-sec">
+										<div class="main-img-bottom1">
+											<img src="assets/images/workout-category/up-img.svg" alt="notification-img">
+										</div>
+										<div class="main-img-top">
+											<img src="assets/images/workout-category/chest3.png" alt="notification-img">
+										</div> 	
+										<div class="main-img-bottom">
+											<img src="assets/images/workout-category/down-img.svg" alt="notification-img">
+										</div>
+									</div> 				
+									<div class="workout-time">
+										<h2 class="sm-font-sans fw-700 color-black">Chest Definition Experess</h2>
+										<p class="mt-8">20 minutes - Beginner</p>
+									</div>
+									<div class="workout-btn">
+										<a href="javascript:void(0)"><img src="assets/svg/right-arrow.svg" alt="right-arrow"></a>
+									</div>
+								</div>
+								<div class="workout-preference-first p-0 mt-16">
+									<div class="verify-email-img-sec">
+										<div class="main-img-bottom1">
+											<img src="assets/images/workout-category/up-img.svg" alt="notification-img">
+										</div>
+										<div class="main-img-top">
+											<img src="assets/images/workout-category/chest4.png" alt="notification-img">
+										</div> 	
+										<div class="main-img-bottom">
+											<img src="assets/images/workout-category/down-img.svg" alt="notification-img">
+										</div>
+									</div> 				
+									<div class="workout-time">
+										<h2 class="sm-font-sans fw-700 color-black">Ultimate Chest Strength</h2>
+										<p class="mt-8">60 minutes - Advanced</p>
+									</div>
+									<div class="workout-btn">
+										<a href="javascript:void(0)"><img src="assets/svg/right-arrow.svg" alt="right-arrow"></a>
+									</div>
+								</div>
+								<div class="workout-preference-first p-0 mt-16">
+									<div class="verify-email-img-sec">
+										<div class="main-img-bottom1">
+											<img src="assets/images/workout-category/up-img.svg" alt="notification-img">
+										</div>
+										<div class="main-img-top">
+											<img src="assets/images/workout-category/chest5.png" alt="notification-img">
+										</div> 	
+										<div class="main-img-bottom">
+											<img src="assets/images/workout-category/down-img.svg" alt="notification-img">
+										</div>
+									</div> 				
+									<div class="workout-time">
+										<h2 class="sm-font-sans fw-700 color-black">Chest Burnout Challenge</h2>
+										<p class="mt-8">35 minutes - Intermediate</p>
+									</div>
+									<div class="workout-btn">
+										<a href="javascript:void(0)"><img src="assets/svg/right-arrow.svg" alt="right-arrow"></a>
+									</div>
+								</div>
+								<div class="workout-preference-first p-0 mt-16">
+									<div class="verify-email-img-sec">
+										<div class="main-img-bottom1">
+											<img src="assets/images/workout-category/up-img.svg" alt="notification-img">
+										</div>
+										<div class="main-img-top">
+											<img src="assets/images/workout-category/chest6.png" alt="notification-img">
+										</div> 	
+										<div class="main-img-bottom">
+											<img src="assets/images/workout-category/down-img.svg" alt="notification-img">
+										</div>
+									</div> 				
+									<div class="workout-time">
+										<h2 class="sm-font-sans fw-700 color-black">Quick Chest Toner</h2>
+										<p class="mt-8">15 minutes - Beginner</p>
+									</div>
+									<div class="workout-btn">
+										<a href="javascript:void(0)"><img src="assets/svg/right-arrow.svg" alt="right-arrow"></a>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade show " id="beginner" role="tabpanel" tabindex="0" >
+								<div class="workout-preference-first p-0 mt-16">
+									<div class="verify-email-img-sec">
+										<div class="main-img-bottom1">
+											<img src="assets/images/workout-category/up-img.svg" alt="notification-img">
+										</div>
+										<div class="main-img-top">
+											<img src="assets/images/workout-category/chest3.png" alt="notification-img">
+										</div> 	
+										<div class="main-img-bottom">
+											<img src="assets/images/workout-category/down-img.svg" alt="notification-img">
+										</div>
+									</div> 				
+									<div class="workout-time">
+										<h2 class="sm-font-sans fw-700 color-black">Chest Definition Experess</h2>
+										<p class="mt-8">20 minutes - Beginner</p>
+									</div>
+									<div class="workout-btn">
+										<a href="javascript:void(0)"><img src="assets/svg/right-arrow.svg" alt="right-arrow"></a>
+									</div>
+								</div>
+								<div class="workout-preference-first p-0 mt-16">
+									<div class="verify-email-img-sec">
+										<div class="main-img-bottom1">
+											<img src="assets/images/workout-category/up-img.svg" alt="notification-img">
+										</div>
+										<div class="main-img-top">
+											<img src="assets/images/workout-category/chest6.png" alt="notification-img">
+										</div> 	
+										<div class="main-img-bottom">
+											<img src="assets/images/workout-category/down-img.svg" alt="notification-img">
+										</div>
+									</div> 				
+									<div class="workout-time">
+										<h2 class="sm-font-sans fw-700 color-black">Quick Chest Toner</h2>
+										<p class="mt-8">15 minutes - Beginner</p>
+									</div>
+									<div class="workout-btn">
+										<a href="javascript:void(0)"><img src="assets/svg/right-arrow.svg" alt="right-arrow"></a>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="intermediate" role="tabpanel" tabindex="0">
+								<div class="workout-preference-first p-0 ">
+									<div class="verify-email-img-sec">
+										<div class="main-img-bottom1">
+											<img src="assets/images/workout-category/up-img.svg" alt="notification-img">
+										</div>
+										<div class="main-img-top">
+											<img src="assets/images/workout-category/chest1.png" alt="notification-img">
+										</div> 	
+										<div class="main-img-bottom">
+											<img src="assets/images/workout-category/down-img.svg" alt="notification-img">
+										</div>
+									</div> 
+									<div class="workout-time">
+										<h2 class="sm-font-sans fw-700 color-black">Chest Chiseler</h2>
+										<p class="mt-8">30 minutes - Intermediate</p>
+									</div>
+									<div class="workout-btn">
+										<a href="javascript:void(0)"><img src="assets/svg/right-arrow.svg" alt="right-arrow"></a>
+									</div>
+								</div>
+								<div class="workout-preference-first p-0 mt-16">
+									<div class="verify-email-img-sec">
+										<div class="main-img-bottom1">
+											<img src="assets/images/workout-category/up-img.svg" alt="notification-img">
+										</div>
+										<div class="main-img-top">
+											<img src="assets/images/workout-category/chest5.png" alt="notification-img">
+										</div> 	
+										<div class="main-img-bottom">
+											<img src="assets/images/workout-category/down-img.svg" alt="notification-img">
+										</div>
+									</div> 				
+									<div class="workout-time">
+										<h2 class="sm-font-sans fw-700 color-black">Chest Burnout Challenge</h2>
+										<p class="mt-8">35 minutes - Intermediate</p>
+									</div>
+									<div class="workout-btn">
+										<a href="javascript:void(0)"><img src="assets/svg/right-arrow.svg" alt="right-arrow"></a>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="advanced" role="tabpanel" tabindex="0" >
+								<div class="workout-preference-first p-0 mt-16">
+									<div class="verify-email-img-sec">
+										<div class="main-img-bottom1">
+											<img src="assets/images/workout-category/up-img.svg" alt="notification-img">
+										</div>
+										<div class="main-img-top">
+											<img src="assets/images/workout-category/chest2.png" alt="notification-img">
+										</div> 	
+										<div class="main-img-bottom">
+											<img src="assets/images/workout-category/down-img.svg" alt="notification-img">
+										</div>
+									</div> 				
+									<div class="workout-time">
+										<h2 class="sm-font-sans fw-700 color-black">Strong Chest Blitz</h2>
+										<p class="mt-8">45 minutes - Advanced</p>
+									</div>
+									<div class="workout-btn">
+										<a href="javascript:void(0)"><img src="assets/svg/right-arrow.svg" alt="right-arrow"></a>
+									</div>
+								</div>
+								<div class="workout-preference-first p-0 mt-16">
+									<div class="verify-email-img-sec">
+										<div class="main-img-bottom1">
+											<img src="assets/images/workout-category/up-img.svg" alt="notification-img">
+										</div>
+										<div class="main-img-top">
+											<img src="assets/images/workout-category/chest4.png" alt="notification-img">
+										</div> 	
+										<div class="main-img-bottom">
+											<img src="assets/images/workout-category/down-img.svg" alt="notification-img">
+										</div>
+									</div> 				
+									<div class="workout-time">
+										<h2 class="sm-font-sans fw-700 color-black">Ultimate Chest Strength</h2>
+										<p class="mt-8">60 minutes - Advanced</p>
+									</div>
+									<div class="workout-btn">
+										<a href="javascript:void(0)"><img src="assets/svg/right-arrow.svg" alt="right-arrow"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Workout search screen end -->
+	</div>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+</body>
+</html>

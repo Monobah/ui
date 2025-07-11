@@ -1,0 +1,164 @@
+
+
+<script setup>
+useHead({
+  title: "Maintainance Fee",
+})
+
+
+import pdfUrl from "~/assets/img/invoice.pdf";
+
+const downloadPdf = () => {
+  // create element <a> for download PDF
+  const link = document.createElement('a');
+  link.href = pdfUrl;
+  link.target = '_blank';
+  link.download = pdfUrl;
+
+  // Simulate a click on the element <a>
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
+
+
+</script>
+
+<template>
+  <div class="cs-container">
+    <div class="cs-invoice cs-style1">
+      <div class="cs-invoice_in" id="download_section">
+        <div class="top-header-section bg-img1">
+          <div class="header-text">
+            <h5 class="text-transform-uppercase">Invoice</h5>
+            <div class="display-flex align-items-flex-end justify-content-flex-end">
+              <img src="~/assets/img/logo.svg" class="cs-logo cs-mr20 cs-width_5" alt="Logo">
+              <p class="cs-m0 cs-f20 text-transform-uppercase cs-primary_color cs-bold">Invoice</p>
+            </div>
+          </div>
+        </div>
+        <div class="cs-invoice_head cs-mb25">
+          <div class="cs-invoice_left">
+            <p> <b class="cs-primary_color">BILLED TO <br></b> Johan Smith<br> Ivonne Company,<br> 365 Bloor
+              Street East, Toronto,<br> Ontario, M4W 3L4, Canada<br> subscriber@email.com
+            </p>
+          </div>
+          <div class="cs-invoice_right cs-mr50">
+
+            <p>
+              <b class="cs-primary_color">Invoice<br></b>Invoice # TMT-C-2023-0808 <br>Invoice Date 08
+              July 2023<br> Invoice Amount $229.00 (USD) <br>Customer ID 0708130246
+            </p>
+          </div>
+        </div>
+        <div class="cs-table cs-style2 cs-mb40">
+          <div>
+            <div class="cs-table_responsive">
+              <p class="cs-mb20">
+                <b class="cs-primary_color">Software Services<br></b>
+              </p>
+              <table>
+                <thead>
+                  <tr class="cs-focus_bg">
+                    <th class="cs-width_1 cs-semi_bold">FROM</th>
+                    <th class="cs-width_1 cs-semi_bold">TO</th>
+                    <th class="cs-width_1 cs-semi_bold">PRICE</th>
+                    <th class="cs-width_1 cs-semi_bold">RATE</th>
+                    <th class="cs-width_1 cs-semi_bold cs-text_right">AMOUNT (USD)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="cs-focus_bg">
+                    <td class="cs-primary_color">01 July 23</td>
+                    <td class="cs-primary_color">01 August 23</td>
+                    <td class="cs-primary_color">$560.00</td>
+                    <td class="cs-primary_color">30%</td>
+                    <td class="cs-text_right cs-primary_color">$560</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="cs-table cs-style2 cs-mb40">
+          <div>
+            <div class="cs-table_responsive">
+              <p class="cs-mb20">
+                <b class="cs-primary_color">Support Fee<br></b>
+              </p>
+              <table>
+                <thead>
+                  <tr class="cs-focus_bg">
+                    <th class="cs-width_1 cs-semi_bold">FROM</th>
+                    <th class="cs-width_1 cs-semi_bold">TO</th>
+                    <th class="cs-width_1 cs-semi_bold">PRICE</th>
+                    <th class="cs-width_1 cs-semi_bold">RATE</th>
+                    <th class="cs-width_1 cs-semi_bold cs-text_right">AMOUNT (USD)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="cs-focus_bg">
+                    <td class="cs-primary_color">01 July 23</td>
+                    <td class="cs-primary_color">01 August 23</td>
+                    <td class="cs-primary_color">$560.00</td>
+                    <td class="cs-primary_color">30%</td>
+                    <td class="cs-text_right cs-primary_color">$560</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="display-flex justify-content-flex-end">
+          <div class="cs-text_right">
+            <p class="cs-text_right cs-primary_color cs-f15">Total: $ 
+              <span class="cs-ml30 cs-primary_color cs-primary_color">$1,120</span> 
+            </p>
+            <p class="cs-text_right cs-f15 cs-primary_color">Payments: $ <span
+                class=" cs-ml30 cs-primary_color">$1,120</span> </p>
+            <div class="cs-border-50percent"></div>
+            <p class="cs-text_right cs-f15 cs-mt15 cs-primary_color">Amount Due: $ <span
+                class="cs-ml30 cs-primary_color">$00.0</span> </p>
+            <div class="cs-border-50percent"></div>
+          </div>
+        </div>
+        <div class="display-flex">
+          <div>
+            <b class="cs-primary_color">William Stark</b>
+            <p>Project Manager</p>
+            <p class="cs-border-50percent"></p>
+            <img src="~/assets/img/signature.png" alt="...">
+          </div>
+        </div>
+        <div class="top-bottom-section">
+        </div>
+        <div class="display-flex justify-content-space-between flex-wrap">
+          <p>
+            All amounts shown on this invoice are in US dollars. <br> The total sales figure shown is your
+            sales less any reversals or refunds.
+          </p>
+          <div class="cs-hide_print">
+            <a @click="downloadPdf" id="download_btn" class="cs-invoice_btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                <path
+                  d="M1.16222 9.979C1.30056 9.979 1.43323 10.034 1.53105 10.1318C1.62887 10.2296 1.68382 10.3623 1.68382 10.5006V13.1086C1.68382 13.3853 1.79373 13.6506 1.98937 13.8462C2.18501 14.0419 2.45035 14.1518 2.72702 14.1518H15.2454C15.5221 14.1518 15.7874 14.0419 15.983 13.8462C16.1787 13.6506 16.2886 13.3853 16.2886 13.1086V10.5006C16.2886 10.3623 16.3435 10.2296 16.4414 10.1318C16.5392 10.034 16.6718 9.979 16.8102 9.979C16.9485 9.979 17.0812 10.034 17.179 10.1318C17.2768 10.2296 17.3318 10.3623 17.3318 10.5006V13.1086C17.3318 13.6619 17.112 14.1926 16.7207 14.5839C16.3294 14.9752 15.7987 15.195 15.2454 15.195H2.72702C2.17367 15.195 1.64299 14.9752 1.25172 14.5839C0.860441 14.1926 0.640625 13.6619 0.640625 13.1086V10.5006C0.640625 10.3623 0.695579 10.2296 0.793398 10.1318C0.891216 10.034 1.02389 9.979 1.16222 9.979Z"
+                  fill="#353535" />
+                <path
+                  d="M8.61654 12.0177C8.66499 12.0663 8.72255 12.1048 8.78592 12.1311C8.84929 12.1574 8.91723 12.1709 8.98583 12.1709C9.05444 12.1709 9.12238 12.1574 9.18575 12.1311C9.24911 12.1048 9.30667 12.0663 9.35513 12.0177L12.4847 8.8881C12.5827 8.79015 12.6377 8.65732 12.6377 8.5188C12.6377 8.38029 12.5827 8.24745 12.4847 8.14951C12.3868 8.05157 12.2539 7.99655 12.1154 7.99655C11.9769 7.99655 11.8441 8.05157 11.7461 8.14951L9.50743 10.3893V1.21642C9.50743 1.07809 9.45248 0.945416 9.35466 0.847597C9.25684 0.749778 9.12417 0.694824 8.98583 0.694824C8.8475 0.694824 8.71483 0.749778 8.61701 0.847597C8.51919 0.945416 8.46424 1.07809 8.46424 1.21642V10.3893L6.22553 8.14951C6.12759 8.05157 5.99475 7.99655 5.85624 7.99655C5.71773 7.99655 5.58489 8.05157 5.48695 8.14951C5.38901 8.24745 5.33398 8.38029 5.33398 8.5188C5.33398 8.65732 5.38901 8.79015 5.48695 8.8881L8.61654 12.0177Z"
+                  fill="#353535" />
+              </svg><span>Download</span>
+            </a>
+            <a href="javascript:window.print()" class="cs-invoice_btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17" fill="none">
+                <path
+                  d="M5.58591 0.444824H13.1011C13.5036 0.444798 13.8908 0.59879 14.1834 0.87521C14.4759 1.15163 14.6516 1.52952 14.6744 1.93137L14.6768 2.02058V3.35343L15.5253 3.35392C16.9314 3.35392 18.0708 4.49331 18.0708 5.89937V12.4448C18.0708 12.8627 17.9047 13.2635 17.6092 13.5591C17.3137 13.8546 16.9129 14.0206 16.495 14.0206L14.6768 14.0201V14.8691C14.6768 15.287 14.5108 15.6878 14.2153 15.9833C13.9198 16.2788 13.519 16.4448 13.1011 16.4448H5.58591C5.16799 16.4448 4.76719 16.2788 4.47168 15.9833C4.17617 15.6878 4.01015 15.287 4.01015 14.8691V14.0201L2.19197 14.0206C1.77405 14.0206 1.37325 13.8546 1.07774 13.5591C0.782228 13.2635 0.616211 12.8627 0.616211 12.4448V5.89937C0.616211 4.49331 1.7556 3.35392 3.16167 3.35392L4.01015 3.35343V2.02058C4.01012 1.61809 4.16412 1.23085 4.44054 0.938288C4.71696 0.645729 5.09485 0.470036 5.4967 0.447249L5.58591 0.444824ZM13.1011 10.3842H5.58591C5.48947 10.3842 5.39697 10.4225 5.32878 10.4907C5.26058 10.5589 5.22227 10.6514 5.22227 10.7479V14.8691C5.22227 15.0698 5.38518 15.2327 5.58591 15.2327H13.1011C13.1975 15.2327 13.29 15.1944 13.3582 15.1262C13.4264 15.058 13.4647 14.9655 13.4647 14.8691V10.7479C13.4647 10.6514 13.4264 10.5589 13.3582 10.4907C13.29 10.4225 13.1975 10.3842 13.1011 10.3842ZM15.5253 4.56604H3.16167C2.80804 4.56604 2.4689 4.70651 2.21886 4.95656C1.96881 5.20661 1.82833 5.54575 1.82833 5.89937V12.4448C1.82833 12.6456 1.99124 12.8085 2.19197 12.8085L4.01015 12.808V10.7479C4.01015 10.3299 4.17617 9.92914 4.47168 9.63363C4.76719 9.33811 5.16799 9.1721 5.58591 9.1721H13.1011C13.519 9.1721 13.9198 9.33811 14.2153 9.63363C14.5108 9.92914 14.6768 10.3299 14.6768 10.7479V12.808L16.495 12.8085C16.5914 12.8085 16.6839 12.7701 16.7521 12.702C16.8203 12.6338 16.8586 12.5413 16.8586 12.4448V5.89937C16.8586 5.54575 16.7182 5.20661 16.4681 4.95656C16.2181 4.70651 15.8789 4.56604 15.5253 4.56604ZM13.1011 1.65695H5.58591C5.49804 1.65695 5.41314 1.68877 5.34691 1.74653C5.28069 1.80429 5.23762 1.88407 5.22567 1.97113L5.22227 2.02058V3.35343H13.4647V2.02058C13.4647 1.93271 13.4329 1.84781 13.3751 1.78159C13.3174 1.71536 13.2376 1.67229 13.1505 1.66034L13.1011 1.65695Z"
+                  fill="#353535" />
+              </svg> <span>Print</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+ 

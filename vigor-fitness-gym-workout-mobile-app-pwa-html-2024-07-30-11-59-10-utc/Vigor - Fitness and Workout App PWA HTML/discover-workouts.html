@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Vigor - Fitness & Workout App PWA HTML</title>
+	<link rel="icon" href="assets/images/favicon/icon.png">
+	<link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/all.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/slick.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/media-query.css">
+</head>
+<body>	
+	<div class="site-content">
+		<!-- Preloader start -->
+		<div class="preloader">
+			<img src="assets/images/favicon/preloader.gif" alt="preloader">
+		</div>
+		<!-- Preloader end -->
+		<!-- Header start -->
+		<header id="top-header">
+			<div class="header-wrap">
+				<div class="header-back">
+					<a href="javascript:history.go(-1)">
+						<img src="assets/svg/black-left-arrow.svg" alt="back-btn-icon">
+					</a>
+				</div>
+				<div class="header-name">
+					<p class="sm-font-zen fw-400">DISCOVER</p>
+				</div>
+				<div class="home-setting">
+					<a href="#offcanvasExample" data-bs-toggle="offcanvas"><img src="assets/svg/setting-icon.svg" alt="setting-icon"></a>
+				</div>
+			</div>
+		</header>
+		<!-- Header end -->
+		<!-- Discover workout screen start -->
+		<div class="verify-email" id="discover-workout-main">
+			<div class="container">
+				<div class="discover-workout-wrap">
+					<div class="serachbar-homepage2 mt-16">
+						<div class="input-group search-page-searchbar ">
+							<span class="input-group-text search-iconn">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M10.9395 1.9313C5.98074 1.9313 1.94141 5.97063 1.94141 10.9294C1.94141 15.8881 5.98074 19.9353 10.9395 19.9353C13.0575 19.9353 15.0054 19.193 16.5449 17.9606L20.293 21.7067C20.4821 21.888 20.7347 21.988 20.9967 21.9854C21.2587 21.9827 21.5093 21.8775 21.6947 21.6924C21.8801 21.5073 21.9856 21.2569 21.9886 20.9949C21.9917 20.7329 21.892 20.4802 21.7109 20.2908L17.9629 16.5427C19.1963 15.0008 19.9395 13.0498 19.9395 10.9294C19.9395 5.97063 15.8982 1.9313 10.9395 1.9313ZM10.9395 3.93134C14.8173 3.93134 17.9375 7.05153 17.9375 10.9294C17.9375 14.8072 14.8173 17.9352 10.9395 17.9352C7.06162 17.9352 3.94141 14.8072 3.94141 10.9294C3.94141 7.05153 7.06162 3.93134 10.9395 3.93134Z" fill="black"></path>
+								</svg>
+							</span>
+							<input type="search" placeholder="Search Here" class="form-control search-text-result" id="search-input">
+						</div>
+					</div>
+					<div class="discover-workout-content mt-24">
+						<div class="account-bottom">
+							<div class="account-type-upgrade ">
+								<h1 class="d-none">Discover workout</h1>
+								<h2 class="text-start">🔥 WORKOUTS</h2>
+							</div>
+							<div class="account-back">
+								<a href="javascript:void(0)">
+									<span>View All</span>
+									<span><img src="assets/svg/right-arrow.svg" alt="edit-icon"></span>
+								</a>
+							</div>
+						</div>
+						<div class="workout-preference-first p-0 mt-16">
+							<div class="verify-email-img-sec">
+								<div class="main-img-bottom1">
+									<img src="assets/images/workout-category/up-img.svg" alt="notification-img">
+								</div>
+								<div class="main-img-top">
+									<img src="assets/images/workout-complete/workout1.png" alt="notification-img">
+								</div> 	
+								<div class="main-img-bottom">
+									<img src="assets/images/workout-category/down-img.svg" alt="notification-img">
+								</div>
+							</div>						
+							<div class="workout-time">
+								<h2>Quick Core Blaster</h2>
+								<p class="mt-8">15 minutes - Intermediate</p>
+							</div>
+							<div class="workout-btn">
+								<a href="javascript:void(0)"><img src="assets/svg/right-arrow.svg" alt="right-arrow"></a>
+							</div>
+						</div>
+						<div class="workout-preference-first p-0 mt-16">
+							<div class="verify-email-img-sec">
+								<div class="main-img-bottom1">
+									<img src="assets/images/workout-category/up-img.svg" alt="notification-img">
+								</div>
+								<div class="main-img-top">
+									<img src="assets/images/workout-complete/workout2.png" alt="notification-img">
+								</div> 	
+								<div class="main-img-bottom">
+									<img src="assets/images/workout-category/down-img.svg" alt="notification-img">
+								</div>
+							</div>						
+							<div class="workout-time">
+								<h2>Total Body Sculpt</h2>
+								<p class="mt-8">45 minutes - Advanced</p>
+							</div>
+							<div class="workout-btn">
+								<a href="javascript:void(0)"><img src="assets/svg/right-arrow.svg" alt="right-arrow"></a>
+							</div>
+						</div>
+						<div class="workout-preference-first p-0 mt-16">
+							<div class="verify-email-img-sec">
+								<div class="main-img-bottom1">
+									<img src="assets/images/workout-category/up-img.svg" alt="notification-img">
+								</div>
+								<div class="main-img-top">
+									<img src="assets/images/workout-complete/workout3.png" alt="notification-img">
+								</div> 	
+								<div class="main-img-bottom">
+									<img src="assets/images/workout-category/down-img.svg" alt="notification-img">
+								</div>
+							</div>						
+							<div class="workout-time">
+								<h2>Leg Day Power Boost</h2>
+								<p class="mt-8">30 minutes - Beginner</p>
+							</div>
+							<div class="workout-btn">
+								<a href="javascript:void(0)"><img src="assets/svg/right-arrow.svg" alt="right-arrow"></a>
+							</div>
+						</div>
+						<div class="workout-preference-first p-0 mt-16">
+							<div class="verify-email-img-sec">
+								<div class="main-img-bottom1">
+									<img src="assets/images/workout-category/up-img.svg" alt="notification-img">
+								</div>
+								<div class="main-img-top">
+									<img src="assets/images/workout-complete/workout4.png" alt="notification-img">
+								</div> 	
+								<div class="main-img-bottom">
+									<img src="assets/images/workout-category/down-img.svg" alt="notification-img">
+								</div>
+							</div>						
+							<div class="workout-time">
+								<h2>Strong Shoulders Blitz</h2>
+								<p class="mt-8">45 minutes - Advanced</p>
+							</div>
+							<div class="workout-btn">
+								<a href="javascript:void(0)"><img src="assets/svg/right-arrow.svg" alt="right-arrow"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="beginner-wrap mt-24">
+				<div class="account-bottom container">
+					<div class="account-type-upgrade ">
+						<h2 class="text-start">Beginner</h2>
+					</div>
+					<div class="account-back">
+						<a href="workout-search.html">
+							<span>View All</span>
+							<span><img src="assets/svg/right-arrow.svg" alt="edit-icon"></span>
+						</a>
+					</div>
+				</div>
+				<div class="beginner-wrap-bottom mt-24">
+					<div class="inspiration-sec-deatils ">
+						<div class="inspiration-overlay"></div>
+						<div class="content-main">
+							<div>
+								<img src="assets/images/homescreen/beginner1.png" alt="gym-img">
+							</div>
+							<div class="inspiration-content">
+								<h3 class="inspiration-title sm-font-sans fw-700 text-white">Leg Day Power <br> Boost</h3>
+								<h4 class="inspiration-subtitle">30 minutes - Beginner</h4>	
+							</div>
+						</div>
+					</div>
+					<div class="inspiration-sec-deatils">
+						<div class="inspiration-overlay"></div>
+						<div class="content-main">
+							<div>
+								<img src="assets/images/homescreen/beginner2.png" alt="gym-img">
+							</div>
+							<div class="inspiration-content">
+								<h3 class="inspiration-title sm-font-sans fw-700 text-white">Abs Cardio<br> Healthy Exercise</h3>
+								<h4 class="inspiration-subtitle">30 minutes - Beginner</h4>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="intermediate-wrap mt-24">
+				<div class="account-bottom container">
+					<div class="account-type-upgrade ">
+						<h2 class="text-start">INTERMEDIATE</h2>
+					</div>
+					<div class="account-back">
+						<a href="workout-search.html">
+							<span>View All</span>
+							<span><img src="assets/svg/right-arrow.svg" alt="edit-icon"></span>
+						</a>
+					</div>
+				</div>
+				<div class="beginner-wrap-bottom mt-24">
+					<div class="inspiration-sec-deatils">
+						<div class="inspiration-overlay"></div>
+						<div class="content-main">
+							<div>
+								<img src="assets/images/homescreen/intermediate1.png" alt="gym-img">
+							</div>
+							<div class="inspiration-content">
+								<h3 class="inspiration-title sm-font-sans fw-700 text-white">Chest Burnout Full  <br> Exercise</h3>
+								<h4 class="inspiration-subtitle">45 minutes - Intermediate</h4>	
+							</div>
+						</div>
+					</div>
+					<div class="inspiration-sec-deatils">
+						<div class="inspiration-overlay"></div>
+						<div class="content-main">
+							<div>
+								<img src="assets/images/homescreen/intermediate2.png" alt="gym-img">
+							</div>
+							<div class="inspiration-content">
+								<h3 class="inspiration-title sm-font-sans fw-700 text-white">Chest Defam<br> Exercise</h3>
+								<h4 class="inspiration-subtitle">30 minutes - Intermediate</h4>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="beginner-wrap mt-24">
+				<div class="account-bottom container">
+					<div class="account-type-upgrade ">
+						<h2 class="text-start">ADVANCED</h2>
+					</div>
+					<div class="account-back">
+						<a href="workout-search.html">
+							<span>View All</span>
+							<span><img src="assets/svg/right-arrow.svg" alt="edit-icon"></span>
+						</a>
+					</div>
+				</div>
+				<div class="beginner-wrap-bottom mt-24">
+					<div class="inspiration-sec-deatils">
+						<div class="inspiration-overlay"></div>
+						<div class="content-main">
+							<div>
+								<img src="assets/images/homescreen/advanced1.png" alt="gym-img">
+							</div>
+							<div class="inspiration-content">
+								<h3 class="inspiration-title sm-font-sans fw-700 text-white">Strong Shoulders  <br>Blitz</h3>
+								<h4 class="inspiration-subtitle">20 minutes - Advanced</h4>	
+							</div>
+						</div>
+					</div>
+					<div class="inspiration-sec-deatils">
+						<div class="inspiration-overlay"></div>
+						<div class="content-main">
+							<div>
+								<img src="assets/images/homescreen/advanced2.png" alt="gym-img">
+							</div>
+							<div class="inspiration-content">
+								<h3 class="inspiration-title sm-font-sans fw-700 text-white">Quick Shoulder <br> Toner</h3>
+								<h4 class="inspiration-subtitle">25 minutes - Advancedr</h4>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Discover workout screen end -->
+		<!-- Bottom tabbar content start -->
+		<div class="bottom-tabbar">
+			<div class="bottom-menu-svg-main">
+				<div class="bottom-menu-svg">
+					<div class="gol3">
+						<div class="add-to-cart-icon">
+							<a href="profile.html">
+								<img src="assets/images/homescreen/icon3.svg" alt="tabbar-icon">
+							</a>
+						</div>
+					</div>
+					<svg class="bottom-menu-svg-design" width="600" height="150" viewBox="0 0 375 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g filter="url(#filter0_b_1_27651)">
+							<path d="M188 46C205.673 46 220 31.6731 220 14C220 7.79231 224.732 1.14283 230.917 1.67204L360.364 12.7477C368.642 13.456 375 20.3816 375 28.6895V104H0V28.6961C0 20.3855 6.36254 13.4585 14.6432 12.7538L145.074 1.65329C151.266 1.12632 156 7.78564 156 14C156 31.6731 170.327 46 188 46Z" fill="#12151C"/>
+						</g>
+						<defs>
+							<filter id="filter0_b_1_27651" x="-24" y="-22.3761" width="423" height="150.376" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+								<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+								<feGaussianBlur in="BackgroundImageFix" stdDeviation="12"/>
+								<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1_27651"/>
+								<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1_27651" result="shape"/>
+							</filter>
+						</defs>
+					</svg>
+				</div>
+			</div>
+			<div class="navigation">
+				<ul class="listWrap">
+					<li class="list ">
+						<a href="homescreen.html">
+							<i class="icon">
+								<img src="assets/images/homescreen/icon1.svg" alt="tabbar-icon">	
+							</i>
+							<span class="text"></span>
+						</a>
+					</li>
+					<li class="list active">
+						<a href="discover-workouts.html">
+							<i class="icon">
+								<img src="assets/images/homescreen/icon2.svg" alt="tabbar-icon">
+							</i>
+							<span class="text"></span>
+						</a>
+					</li>
+					<li class="list">
+						<a href="bar-chart.html">
+							<i class="icon">
+								<img src="assets/images/homescreen/icon4.svg" alt="tabbar-icon">	
+							</i>
+							<span class="text"></span>
+						</a>
+					</li>
+					<li class="list">
+						<a href="workout-history.html">
+							<i class="icon">
+								<img src="assets/images/homescreen/icon5.svg" alt="tabbar-icon">	
+							</i>
+							<span class="text"></span>
+						</a>
+					</li>
+				</ul>
+			</div> 
+		</div>
+		<!-- Bottom tabbar content end -->
+		<!--SideBar setting menu start -->
+		<div class="menu-sidebar details">
+			<div class="offcanvas offcanvas-start custom-offcanvas-noti" id="offcanvasExample">
+				<div class="offcanvas-header custom-header-offcanva">
+					<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body">
+					<div class="dropdown">
+						<div class="setting-page-full">
+							<div class="setting-page-wrapper">
+								<a href="workout-preferences.html">
+									<div class="send-money-contact-tab border-bottom1 pt-0  ">
+										<div class="setting-icon">
+											<img src="assets/images/setting/setting1.svg" alt="setting-icon">
+										</div>
+										<div class="setting-title">
+											<h3>Workout Preferences</h3>
+										</div>
+										<div class="contact-star">
+											<div class="star-favourite">
+												<img src="assets/svg/right-arrow.svg" alt="edit-icon">
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="billing-subscription.html">
+									<div class="send-money-contact-tab border-bottom1 ">
+										<div class="setting-icon">
+											<img src="assets/images/setting/setting2.svg" alt="setting-icon">
+										</div>
+										<div class="setting-title">
+											<h3>Billing & Subscriptions</h3>
+										</div>
+										<div class="contact-star">
+											<div class="star-favourite">
+												<img src="assets/svg/right-arrow.svg" alt="edit-icon">
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="set-biometric.html">
+									<div class="send-money-contact-tab border-bottom1">
+										<div class="setting-icon">
+											<img src="assets/images/setting/setting7.svg" alt="setting-icon">
+										</div>
+										<div class="setting-title">
+											<h3>Set biometric</h3>
+										</div>
+										<div class="contact-star">
+											<div class="star-favourite">
+												<img src="assets/svg/right-arrow.svg" alt="edit-icon">
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="payment-method.html">
+									<div class="send-money-contact-tab border-bottom1 ">
+										<div class="setting-icon">
+											<img src="assets/images/setting/setting3.svg" alt="setting-icon">
+										</div>
+										<div class="setting-title">
+											<h3>Payment Methods</h3>
+										</div>
+										<div class="contact-star">
+											<div class="star-favourite">
+												<img src="assets/svg/right-arrow.svg" alt="edit-icon">
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="linked-account.html">
+									<div class="send-money-contact-tab border-bottom1 ">
+										<div class="setting-icon">
+											<img src="assets/images/setting/setting4.svg" alt="setting-icon">
+										</div>
+										<div class="setting-title">
+											<h3>Linked Accounts</h3>
+										</div>
+										<div class="contact-star">
+											<div class="star-favourite">
+												<img src="assets/svg/right-arrow.svg" alt="edit-icon">
+											</div>
+										</div>
+									</div>
+								</a>
+								<div class="Char-content border-bottom1">
+									<div class="send-money-contact-tab ">
+										<div class="setting-icon">
+											<img src="assets/images/setting/setting3.svg" alt="setting-icon">
+										</div>
+										<div class="setting-title">
+											<h3>Different Chart</h3>
+										</div>
+										<div class="contact-star">
+											<div class="star-favourite">
+												<img src="assets/svg/up-arrow.svg" alt="edit-icon">
+											</div>
+										</div>
+									</div>
+									<div class="diffrent-chat-dropdown">
+										<ul>
+											<li><a href="area-chart.html">Area Chat</a></li>
+											<li class="border-0"><a href="line-chart.html ">Line Chat</a></li>
+										</ul>
+									</div>
+								</div>
+								<a href="data-analytics.html">
+									<div class="send-money-contact-tab  pb-0">
+										<div class="setting-icon">
+											<img src="assets/images/setting/setting5.svg" alt="setting-icon">
+										</div>
+										<div class="setting-title">
+											<h3>Data & Analytics</h3>
+										</div>
+										<div class="contact-star">
+											<div class="star-favourite">
+												<img src="assets/svg/right-arrow.svg" alt="edit-icon">
+											</div>
+										</div>
+									</div>
+								</a>
+								<div class="setting-center-border"></div>
+								<a href="profile.html">
+									<div class="send-money-contact-tab border-bottom1 pt-0">
+										<div class="setting-icon">
+											<img src="assets/images/setting/setting6.svg" alt="setting-icon">
+										</div>
+										<div class="setting-title">
+											<h3>Personal Info</h3>
+										</div>
+										<div class="contact-star">
+											<div class="star-favourite">
+												<img src="assets/svg/right-arrow.svg" alt="edit-icon">
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="security.html">
+									<div class="send-money-contact-tab border-bottom1">
+										<div class="setting-icon">
+											<img src="assets/images/setting/setting7.svg" alt="setting-icon">
+										</div>
+										<div class="setting-title">
+											<h3>Security</h3>
+										</div>
+										<div class="contact-star">
+											<div class="star-favourite">
+												<img src="assets/svg/right-arrow.svg" alt="edit-icon">
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="language.html">
+									<div class="send-money-contact-tab border-bottom1">
+										<div class="setting-icon">
+											<img src="assets/images/setting/setting8.svg" alt="setting-icon">
+										</div>
+										<div class="setting-title">
+											<h3>Language</h3>
+										</div>
+										<div class="contact-star">
+											<div class="star-favourite">
+												<span class="setting-lanuage">
+													English (US)
+												</span>
+												<span>
+													<img src="assets/svg/right-arrow.svg" alt="edit-icon">
+												</span>
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="currency.html">
+									<div class="send-money-contact-tab border-bottom1">
+										<div class="setting-icon">
+											<img src="assets/images/setting/setting18.svg" alt="setting-icon">
+										</div>
+										<div class="setting-title">
+											<h3>Currency</h3>
+										</div>
+										<div class="contact-star">
+											<div class="star-favourite">
+												<span class="setting-lanuage">
+													USD
+												</span>
+												<span>
+													<img src="assets/svg/right-arrow.svg" alt="edit-icon">
+												</span>
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="faq.html">
+									<div class="send-money-contact-tab border-bottom1 ">
+										<div class="setting-icon">
+											<img src="assets/images/setting/setting9.svg" alt="setting-icon">
+										</div>
+										<div class="setting-title">
+											<h3>FAQs</h3>
+										</div>
+										<div class="contact-star">
+											<div class="star-favourite">
+												<img src="assets/svg/right-arrow.svg" alt="edit-icon">
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="data-privacy.html">
+									<div class="send-money-contact-tab border-bottom1 ">
+										<div class="setting-icon">
+											<img src="assets/images/setting/setting10.svg" alt="setting-icon">
+										</div>
+										<div class="setting-title">
+											<h3>Data & Privacy Policy</h3>
+										</div>
+										<div class="contact-star">
+											<div class="star-favourite">
+												<img src="assets/svg/right-arrow.svg" alt="edit-icon">
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="about-us.html">
+									<div class="send-money-contact-tab border-bottom1">
+										<div class="setting-icon">
+											<img src="assets/images/setting/setting11.svg" alt="setting-icon">
+										</div>
+										<div class="setting-title">
+											<h3>About Vigor</h3>
+										</div>
+										<div class="contact-star">
+											<div class="star-favourite">
+												<span class="setting-lanuage">
+													v2.0.2
+												</span>
+												<span>
+													<img src="assets/svg/right-arrow.svg" alt="edit-icon">
+												</span>
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="feedback.html">
+									<div class="send-money-contact-tab border-bottom1 ">
+										<div class="setting-icon">
+											<img src="assets/images/setting/setting12.svg" alt="setting-icon">
+										</div>
+										<div class="setting-title">
+											<h3>Send Feedback</h3>
+										</div>
+										<div class="contact-star">
+											<div class="star-favourite">
+												<img src="assets/svg/right-arrow.svg" alt="edit-icon">
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="contact-us.html">
+									<div class="send-money-contact-tab border-bottom1 ">
+										<div class="setting-icon">
+											<img src="assets/images/setting/setting13.svg" alt="setting-icon">
+										</div>
+										<div class="setting-title">
+											<h3>Contact Us</h3>
+										</div>
+										<div class="contact-star">
+											<div class="star-favourite">
+												<img src="assets/svg/right-arrow.svg" alt="edit-icon">
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="Invite-friend.html">
+									<div class="send-money-contact-tab border-bottom1 ">
+										<div class="setting-icon">
+											<img src="assets/images/setting/setting15.svg" alt="setting-icon">
+										</div>
+										<div class="setting-title">
+											<h3>Invite Friends</h3>
+										</div>
+										<div class="contact-star">
+											<div class="star-favourite">
+												<img src="assets/svg/right-arrow.svg" alt="edit-icon">
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="delete-deactivate-account.html">
+									<div class="send-money-contact-tab border-bottom1 ">
+										<div class="setting-icon bg-red">
+											<img src="assets/images/setting/setting16.svg" alt="setting-icon">
+										</div>
+										<div class="setting-title">
+											<h3>Delete or Deactivate Account</h3>
+										</div>
+										<div class="contact-star">
+											<div class="star-favourite">
+												<img src="assets/svg/right-arrow.svg" alt="edit-icon">
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#workout-complete-modal">
+									<div class="send-money-contact-tab">
+										<div class="setting-icon bg-red">
+											<img src="assets/images/setting/setting17.svg" alt="setting-icon">
+										</div>
+										<div class="setting-title">
+											<h3>Logout</h3>
+										</div>
+										<div class="contact-star">
+											<div class="star-favourite">
+												<img src="assets/svg/right-arrow.svg" alt="edit-icon">
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--SideBar setting menu end -->
+		<!-- Logout modal start -->
+		<div class="modal fade" id="workout-complete-modal" tabindex="-1"  aria-hidden="true">
+			<div class="modal-dialog ">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="account-upgrade-remind text-center" >
+							<img src="assets/images/setting/logout-img.png" alt="logout-img">
+							<h3 class="logout-txt pt-16">Logout</h3>
+							<p class="sure-txt p-0 mt-12">Are you sure you want to log out?</p>
+							<div class="border mt-24"></div>
+							<div class="workout-bottom-btn-wrap mt-24">
+								<div class="home-btn">
+									<a href="homescreen.html">CANCEL</a>
+								</div>
+								<div class="report-btn">
+									<a href="splashscreen.html">LOGOUT</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Logout modal end-->
+	</div>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/jquery.ui.min.js"></script>
+	<script src="assets/js/slick.min.js"></script>
+	<script src="assets/js/slider.js"></script>
+	<script src="assets/js/custom.js"></script>
+	<script>
+		$(document).ready(function() {
+			$(document).on('click', '.send-money-contact-tab', function() {
+				$(this).next(".diffrent-chat-dropdown").toggle();
+			});
+		});
+	</script>
+</body>
+</html>

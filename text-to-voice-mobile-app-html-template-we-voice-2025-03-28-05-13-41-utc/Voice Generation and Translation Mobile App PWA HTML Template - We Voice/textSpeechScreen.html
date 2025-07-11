@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEvoice</title>
+    <link rel="icon" href="assets/images/svg/favicon.svg">
+    <link rel="stylesheet" href="assets/css/swap.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media_query.css">
+</head>
+
+<body>
+    <div class="site_content">
+        <!-- ====================================== Preloader ===================================== -->
+        <div class="page-loader" id="page-loader">
+            <img src="assets/images/svg/logo.svg" alt="logo">
+            <p class="loade-text" data-text="WEvoice">WEvoice</p>
+        </div>
+        <!-- ====================================== Header ===================================== -->
+        <header id="top-navbar" class="site_lr-spacer homeHeader-main">
+            <div class="back-with-text border-bottom-0">
+                <a href="javascript:history.go(-1)">
+                    <img class="nav-header back-btn" src="assets/images/svg/back-btn-top.svg" alt="back-btn-top">
+                </a>
+                <div class="header-title">
+                    <h1>YouTube Channel Video 1</h1>
+                </div>
+            </div>
+            <div class="homeHeader position-relative">
+                <a href="#" class="audioTune">
+                    <img src="assets/images/svg/buttonMore.svg" alt="buttonMore">
+                </a>
+                <div class="audioTunePopup header-popup">
+                    <ul class="wea rename-main-pop">
+                        <li class="pt-0"><img src="assets/images/svg/rename.svg" alt="rename"> Rename</li>
+                        <li><img src="assets/images/svg/share.svg" alt="share">Share</li>
+                        <li><img src="assets/images/svg/duplicate.svg" alt="duplicate">Duplicate</li>
+                        <li data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom">
+                            <img src="assets/images/svg/export.svg" alt="export">Export
+                        </li>
+                        <li class="pb-0 border-bottom-0 deleteOpestion"><img src="assets/images/svg/delete.svg"
+                                alt="delete">Delete
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- ====================================== Text Speech Screen Start ===================================== -->
+        <section class="section-main section-main-ver mt-3">
+            <a href="translateTo.html" class="dropdown-main-text-screen">
+                <div class="uiew-main">
+                    <div class="alks-manin">
+                        <img src="assets/images/home-screen/PerAI-img1.jpg" alt="PerAI-img1">
+                    </div>
+                    <h2 class="name-withflg">Olivia (F) <span>- English</span></h2>
+                </div>
+                <div class="uiew-main">
+                    <div class="kjs-flag-main">
+                        <img src="assets/images/home-screen/country.jpg" alt="country">
+                    </div>
+                    <img src="assets/images/svg/circledropdown.svg" alt="circledropdown">
+                </div>
+            </a>
+            <div class="pitch-buttons-main">
+                <button id="pitch" class="display-value">Pitch 0%</button>
+                <div class="popup" id="pitch-popup">
+                    <div class="slider-container" data-button="pitch">
+                        <div class="slider">
+                            <div class="slider-track"></div>
+                            <div class="slider-thumb">
+                                <div class="thumb-value">0%</div>
+                            </div>
+                        </div>
+                        <div class="labels">
+                            <span>-50%</span>
+                            <span>-25%</span>
+                            <span>0%</span>
+                            <span>+25%</span>
+                            <span>+50%</span>
+                        </div>
+                    </div>
+                </div>
+                <button id="speed" class="display-value">Speed 0%</button>
+                <div class="popup" id="speed-popup">
+                    <div class="slider-container" data-button="speed">
+                        <div class="slider">
+                            <div class="slider-track"></div>
+                            <div class="slider-thumb">
+                                <div class="thumb-value">0%</div>
+                            </div>
+                        </div>
+                        <div class="labels">
+                            <span>-50%</span>
+                            <span>-25%</span>
+                            <span>0%</span>
+                            <span>+25%</span>
+                            <span>+50%</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="audioTune audioTone-btn">Audio Tone</button>
+                <div class="audioTunePopup audioTuneWeak">
+                    <ul class="wea">
+                        <li class="pt-0">Extra Weak (250 ms)</li>
+                        <li>Weak (0.5 s)</li>
+                        <li>Medium (0.7 s)</li>
+                        <li>Strong (1 s)</li>
+                        <li>Extra Strong (1.25 s)</li>
+                        <li class="pb-0 border-bottom-0">Custom</li>
+                    </ul>
+                </div>
+                <button>Pronunciation</button>
+            </div>
+            <div class="exploAI">
+                <p>Script</p>
+                <div class="play-btn-purple-main">
+                    <span>0 s</span>
+                    <img src="assets/images/svg/play-btn-purple.svg" alt="play-btn-purple">
+                </div>
+            </div>
+            <div class="textSpeechScreen-input-main">
+                <img src="assets/images/svg/button-drag.svg" alt="button-drag">
+                <textarea placeholder="Enter your text here..." autocomplete="off" name="search"></textarea>
+                <div>
+                    <img class="audioTune" src="assets/images/svg/buttonMore.svg" alt="buttonMore">
+                    <div class="audioTunePopup header-popup">
+                        <ul class="wea rename-main-pop">
+                            <li class="pt-0"><img src="assets/images/svg/move-up.svg" alt="rename">Move Up</li>
+                            <li><img src="assets/images/svg/move-down.svg" alt="share">Move Down</li>
+                            <li><img src="assets/images/svg/duplicate.svg" alt="duplicate">Duplicate Block</li>
+                            <li><img src="assets/images/svg/export.svg" alt="export">Export Voice</li>
+                            <li class="pb-0 border-bottom-0 deleteOpestion"><img src="assets/images/svg/delete.svg"
+                                    alt="delete">Delete Block
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <img class="circle-play-btn" src="assets/images/svg/circle-play-btn.svg" alt="circle-play-btn">
+                <img class="circle-pause-btn" src="assets/images/svg/circle-pause-btn.svg" alt="circle-pause-btn">
+            </div>
+        </section>
+        <!-- ====================================== Add a Block ===================================== -->
+        <div class="add-aBlock-main">
+            <button class="add-aBlock">
+                <img src="assets/images/svg/pluse-white-icon.svg" alt="pluse-white-icon">Add a Block
+            </button>
+        </div>
+        <!-- ====================================== Speech Bottom Offcanvas ===================================== -->
+        <div class="offcanvas offcanvas-bottom offcanvas-texttoSpeech offcanvas-export" tabindex="-1"
+            id="offcanvasBottom">
+            <div class="offcanvas-header offcanvas-headertexttoSpeech">
+                <div class="offcanva-line" data-bs-dismiss="offcanvas"></div>
+                <h3 class="offcanvas-title texttoSpeech">Export</h3>
+            </div>
+            <div class="offcanvas-body small">
+                <h2 class="eposia-s pt-2">Export as</h2>
+                <div class="select-lang-sec">
+                    <div class="lang-sec">
+                        <input type="checkbox" id="select-lang1" name="select-language" checked="">
+                        <label class="custom-radio-sel-lang" for="select-lang1">single File</label>
+                    </div>
+                    <div class="lang-sec">
+                        <input type="checkbox" id="select-lang2" name="select-language">
+                        <label class="custom-radio-sel-lang " for="select-lang2">Split by Blocks</label>
+                    </div>
+                </div>
+                <h2 class="eposia-s">Format</h2>
+                <div class="select-lang-sec">
+                    <div class="lang-sec">
+                        <input type="checkbox" id="select-lang3" name="select-language">
+                        <label class="custom-radio-sel-lang " for="select-lang3">.MP3</label>
+                    </div>
+                    <div class="lang-sec">
+                        <input type="checkbox" id="select-lang4" name="select-language">
+                        <label class="custom-radio-sel-lang " for="select-lang4">.WAV</label>
+                    </div>
+                    <div class="lang-sec">
+                        <input type="checkbox" id="select-lang5" name="select-language">
+                        <label class="custom-radio-sel-lang " for="select-lang5">.FLAC
+                            <img src="assets/images/svg/crowen-yellow.svg" alt="crowen-yellow">
+                        </label>
+                    </div>
+                    <div class="lang-sec">
+                        <input type="checkbox" id="select-lang6" name="select-language">
+                        <label class="custom-radio-sel-lang " for="select-lang6">.AAC
+                            <img src="assets/images/svg/crowen-yellow.svg" alt="crowen-yellow">
+                        </label>
+                    </div>
+                    <div class="lang-sec">
+                        <input type="checkbox" id="select-lang7" name="select-language">
+                        <label class="custom-radio-sel-lang " for="select-lang7">.WMA
+                            <img src="assets/images/svg/crowen-yellow.svg" alt="crowen-yellow">
+                        </label>
+                    </div>
+                </div>
+                <h2 class="eposia-s">Quality</h2>
+                <div class="select-lang-sec">
+                    <div class="lang-sec">
+                        <input type="checkbox" id="select-lang8" name="select-language">
+                        <label class="custom-radio-sel-lang" for="select-lang8">Low</label>
+                    </div>
+                    <div class="lang-sec">
+                        <input type="checkbox" id="select-lang9" name="select-language">
+                        <label class="custom-radio-sel-lang" for="select-lang9">Medium</label>
+                    </div>
+                    <div class="lang-sec">
+                        <input type="checkbox" id="select-lang10" name="select-language">
+                        <label class="custom-radio-sel-lang" for="select-lang10">High
+                            <img src="assets/images/svg/crowen-yellow.svg" alt="crowen-yellow">
+                        </label>
+                    </div>
+                </div>
+                <div class="button-main projectTitle-buttons">
+                    <a href="#" data-bs-dismiss="offcanvas" aria-label="Close" class="skip-btn">Cancel</a>
+                    <a href="#exporting-audio-modal" class="main-bg-color-btn continue-btn" data-bs-toggle="modal"
+                        data-url="music-player1.html">Export Now</a>
+                </div>
+            </div>
+        </div>
+        <!-- ======================= Personal information Screen Modal =========================== -->
+        <div class="modal fade" id="exporting-audio-modal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content finger-modal-content">
+                    <div class="modal-body">
+                        <div class="finger-print-modal-popup">
+                            <div class="finger-content-sec mt-32">
+                                <div class="loader2">
+                                    <div class="sk-fading-circle">
+                                        <div class="sk-circle1 sk-circle"></div>
+                                        <div class="sk-circle2 sk-circle"></div>
+                                        <div class="sk-circle3 sk-circle"></div>
+                                        <div class="sk-circle4 sk-circle"></div>
+                                        <div class="sk-circle5 sk-circle"></div>
+                                        <div class="sk-circle6 sk-circle"></div>
+                                        <div class="sk-circle7 sk-circle"></div>
+                                        <div class="sk-circle8 sk-circle"></div>
+                                        <div class="sk-circle9 sk-circle"></div>
+                                        <div class="sk-circle10 sk-circle"></div>
+                                        <div class="sk-circle11 sk-circle"></div>
+                                        <div class="sk-circle12 sk-circle"></div>
+                                    </div>
+                                </div>
+                                <h2 class="congratulations">Exporting Audio...</h2>
+                                <p class="few-sec" id="counter-audio">65%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/javascript/jquery.js"></script>
+    <script src="assets/javascript/slick.min.js"></script>
+    <script src="assets/javascript/bootstrap.min.js"></script>
+    <script src="assets/javascript/script.js"></script>
+</body>
+
+</html>

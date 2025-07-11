@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEvoice</title>
+    <link rel="icon" href="assets/images/svg/favicon.svg">
+    <link rel="stylesheet" href="assets/css/swap.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media_query.css">
+</head>
+
+<body>
+    <div class="site_content">
+        <!-- ====================================== Preloader ===================================== -->
+        <div class="page-loader" id="page-loader">
+            <img src="assets/images/svg/logo.svg" alt="logo">
+            <p class="loade-text" data-text="WEvoice">WEvoice</p>
+        </div>
+        <!-- ====================================== Header ===================================== -->
+        <header id="top-navbar" class="site_lr-spacer homeHeader-main">
+            <div class="back-with-text border-bottom-0">
+                <a href="javascript:history.go(-1)">
+                    <img class="nav-header back-btn" src="assets/images/svg/back-btn-top.svg" alt="back-btn-top">
+                </a>
+                <div class="header-title">
+                    <h1>AI Voice Translate</h1>
+                </div>
+            </div>
+        </header>
+        <!-- ====================================== AI Voice Translate Screen Start ===================================== -->
+        <section class="section-main section-main-ver">
+            <div class="kjao-mian">
+                <h2 class="expor-ciomp pt-0">Upload Audio File 🎵</h2>
+                <p class="skjao">Upload your audio file to get started.</p>
+            </div>
+            <div class="muisc-uploade-main" id="uploadBox">
+                <div id="defaultState">
+                    <img class="upload-icon" src="assets/images/svg/uploade.svg" alt="uploade">
+                    <div class="sjkqWav">Supports .mp3, .wav, .flac, .aac</div>
+                </div>
+                <div class="progress-container-audio" id="progressState">
+                    <img class="rotate-icon" src="assets/images/svg/uplode-loader.svg" alt="uplode-loader">
+                    <div class="upload-text" id="fileName">Uploading...</div>
+                    <div class="upload-text" id="progressPercentage">(0%)</div>
+                </div>
+            </div>
+            <input type="file" id="fileInput" style="display: none;">
+        </section>
+        <div class="button-main Verify-btn">
+            <a href="#" class="main-bg-color-btn">Continue</a>
+        </div>
+    </div>
+    <script src="assets/javascript/jquery.js"></script>
+    <script src="assets/javascript/slick.min.js"></script>
+    <script src="assets/javascript/bootstrap.min.js"></script>
+    <script src="assets/javascript/script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const uploadBox = document.getElementById("uploadBox");
+            const fileInput = document.getElementById("fileInput");
+            const defaultState = document.getElementById("defaultState");
+            const progressState = document.getElementById("progressState");
+            const fileNameDisplay = document.getElementById("fileName");
+            const progressPercentage = document.getElementById("progressPercentage");
+            uploadBox.addEventListener("click", () => {
+                fileInput.click();
+            });
+            fileInput.addEventListener("change", (event) => {
+                const file = event.target.files[0];
+                if (file) {
+                    defaultState.style.display = "none";
+                    progressState.style.display = "flex";
+                    fileNameDisplay.innerText = `Uploading "${file.name}"`;
+                    let progress = 0;
+                    const interval = setInterval(() => {
+                        if (progress >= 100) {
+                            clearInterval(interval);
+                            progressPercentage.innerText = "Upload Complete!";
+                            setTimeout(() => {
+                                window.location.href = "aiVoiceAudio.html";
+                            }, 1000);
+                        } else {
+                            progress += 1;
+                            progressPercentage.innerText = `(${progress}%)`;
+                        }
+                    }, 50);
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

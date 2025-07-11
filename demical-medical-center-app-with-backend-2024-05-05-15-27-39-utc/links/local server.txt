@@ -1,0 +1,11 @@
+You need to set up local server
+
+Mac OS:
+
+1. https://www.apachefriends.org/
+2. https://www.mamp.info/en/mamp/mac/
+
+Windows:
+
+1. https://ospanel.io/
+2. https://www.mamp.info/en/windows/

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Vigor - Fitness & Workout App PWA HTML</title>
+	<link rel="icon" href="assets/images/favicon/icon.png">
+	<link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/all.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/media-query.css">
+</head>
+<body>
+	<div class="site-content">
+		<!-- Preloader start -->
+		<div class="preloader">
+			<img src="assets/images/favicon/preloader.gif" alt="preloader">
+		</div>
+		<!-- Preloader end -->
+		<!-- Header start -->
+		<header id="top-header">
+			<div class="header-wrap">
+				<div class="header-back">
+					<a href="javascript:history.go(-1)">
+						<img src="assets/svg/black-left-arrow.svg" alt="back-btn-icon">
+					</a>
+				</div>
+				<div class="header-name">
+					<p class="sm-font-zen fw-400">feedback</p>
+				</div>
+			</div>
+		</header>
+		<!-- Header end -->
+		<!-- Feedback screen start -->
+		<div class="verify-email pb-20" id="feedback-main">
+			<div class="container">
+				<div class="feedback-content  mt-16">
+					<h1 class="d-none">Feedback</h1>
+					<form class="feedback-form">
+						<div class="feedback-email">
+							<label for="email" class="custom-lbl-feedback">Your Email Address</label>
+							<input type="email" id="email" placeholder="Write here" class="sm-font-sans border mt-8" autocomplete="off">
+						</div>
+						<div class="mt-24">
+							<label for="subject" class="custom-lbl-feedback">Select Subject (Optional)</label>
+							<div class="custom-select-subject mt-8">
+								<select name="persons" class="arrow-icon sm-font-sans border" id="subject">
+									<option>Choose Your Subject</option>
+									<option>Subject 1</option>
+									<option>Subject 2</option>
+									<option>Subject 3</option>
+								</select>
+							</div>
+						</div>
+						<div class="mt-24">
+							<label for="textarea" class="custom-lbl-feedback">Description</label>
+							<textarea rows="4" cols="50" placeholder="Write here..." class="sm-font-sans custom-textarea mt-8" id="textarea"></textarea>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- Feedback screen end -->
+	</div>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+</body>
+</html>

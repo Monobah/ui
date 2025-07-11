@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Vigor - Fitness & Workout App PWA HTML</title>
+	<link rel="icon" href="assets/images/favicon/icon.png">
+	<link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/all.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/media-query.css">
+</head>
+<body>
+	<div class="site-content">
+		<!-- Preloader start -->
+		<div class="preloader">
+			<img src="assets/images/favicon/preloader.gif" alt="preloader">
+		</div>
+		<!-- Preloader end -->
+		<!-- Header start -->
+		<header id="top-header">
+			<div class="header-wrap">
+				<div class="header-back">
+					<a href="javascript:history.go(-1)">
+						<img src="assets/svg/black-left-arrow.svg" alt="back-btn-icon">
+					</a>
+				</div>
+				<div class="header-name">
+					<p class="sm-font-zen fw-400">ADD NEW CARD</p>
+				</div>
+			</div>
+		</header>
+		<!-- Header end -->
+		<!-- Add new card screen start -->
+		<div class="verify-email pb-100" id="add-new-card-main">
+			<div class="container">
+				<div class="add-new-card-content">
+					<h1 class="d-none">Add New Card</h1>
+					<div class="add-new-card-details">
+						<div class="position-relative demo-visa mt-16">
+							<div>
+								<img src="assets/images/payment/visa-logo.png" alt="visa">
+							</div>
+							<p class="card-hidden-number" id="lokiCardNumber">*** **** **** 0890</p>
+							<div class="card-name-jessica-main">
+								<p class="card-name-jessica" id="lokiCardName">Jessica Smith</p>
+								<div class="card-name-jessica-main-sub">
+									<p class="card-date-cvv" id="lokiExpiryDate">07/**</p>
+									<p class="card-date-cvv" id="lokiCVV">***</p>
+								</div>
+							</div>
+						</div>
+						<div class="new_password_input" id="new-card-inputs">
+							<div class="personal-name mt-24">
+								<label for="username">Card Name</label>
+								<input type="text"  id="username"   autocomplete="off" required oninput="updateLokiBox('lokiCardName', this)" value="Jessica Smith"> 
+							</div>
+							<div class="personal-name mt-16">
+								<label for="cardNumber">Card Number</label>
+								<input type="text"  id="cardNumber"   autocomplete="off" required pattern="\d*" maxlength="16" oninput="maskNumber(this)" value="2672 4789 1452 0890"> 
+							</div>
+							<div class="expiry-date mt-16">
+								<div class="personal-name">
+									<label for="datepicker">Expiry Date</label>
+									<input type="text" class="color-green" id="datepicker"  value="07/26" required> 
+								</div>
+								<div class="personal-name d-flex ">
+									<input type="text"  id="threeDigitInput"  maxlength="3" placeholder="CVV" oninput=" validateInputcvv(this)" required> 
+								</div>
+							</div>
+						</div>
+						<div class="password-btn bottom-fixed ">
+							<a href="sign-in.html">ADD MY CARD</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Add new card screen end -->
+	</div>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/jquery.ui.min.js"></script>
+	<script src="assets/js/datepiker.js"></script>
+	<script src="assets/js/custom.js"></script>
+</body>
+</html>

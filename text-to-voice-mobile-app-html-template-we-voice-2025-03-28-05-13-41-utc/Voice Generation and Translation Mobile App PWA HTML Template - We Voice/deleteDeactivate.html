@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEvoice</title>
+    <link rel="icon" href="assets/images/svg/favicon.svg">
+    <link rel="stylesheet" href="assets/css/swap.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media_query.css">
+</head>
+
+<body>
+    <div class="site_content">
+        <!-- ====================================== Preloader ===================================== -->
+        <div class="page-loader" id="page-loader">
+            <img src="assets/images/svg/logo.svg" alt="logo">
+            <p class="loade-text" data-text="WEvoice">WEvoice</p>
+        </div>
+        <!-- ====================================== Header ===================================== -->
+        <header id="top-navbar" class="site_lr-spacer back-with-text">
+            <a href="javascript:history.go(-1)">
+                <img class="nav-header back-btn" src="assets/images/svg/back-btn-top.svg" alt="back-btn-top">
+            </a>
+            <div class="header-title">
+                <h1>Delete or Deactivate</h1>
+            </div>
+        </header>
+        <!-- ====================================== Deactivate Screen Start ===================================== -->
+        <section class="section-main mb-3 mt-3">
+            <h2 class="romio">If you want to leave Romio temporarily, simple deactivate your account. If you choose to
+                delete your account instead, you won’t be able to recover it after 30 days.</h2>
+            <form id="deleteDeactivateForm">
+                <div class="news-box-main">
+                    <div class="your-data-main">
+                        <p class="news-tex border-bottom-0 pb-0">Deactivate Account</p>
+                        <div class="custom-check-radio">
+                            <input class="check-radio" type="radio" name="action" id="deactivate" value="deactivate">
+                        </div>
+                    </div>
+                    <p class="roducts">No one can see your account, including all content that is stored in it.
+                        Reactivate your account and recover all content anytime.</p>
+                </div>
+                <div class="news-box-main">
+                    <div class="your-data-main">
+                        <p class="news-tex border-bottom-0 pb-0">Delete Account Permanently</p>
+                        <div class="custom-check-radio">
+                            <input class="check-radio" type="radio" name="action" id="delete" value="delete">
+                        </div>
+                    </div>
+                    <p class="roducts">Your account and content will be deleted permanently. You may cancel the deletion
+                        request by reactivating your account within 30 days.</p>
+                </div>
+            </form>
+        </section>
+        <div class="button-main Verify-btn" onclick="continueAction()">
+            <a href="#" class="main-bg-color-btn">Continue</a>
+        </div>
+    </div>
+    <script src="assets/javascript/jquery.js"></script>
+    <script src="assets/javascript/slick.min.js"></script>
+    <script src="assets/javascript/bootstrap.min.js"></script>
+    <script src="assets/javascript/script.js"></script>
+</body>
+
+</html>

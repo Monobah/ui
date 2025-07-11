@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Vigor - Fitness & Workout App PWA HTML</title>
+	<link rel="icon" href="assets/images/favicon/icon.png">
+	<link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/all.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/media-query.css">
+</head>
+<body>
+	<div class="site-content">
+		<!-- Preloader start -->
+		<div class="preloader">
+			<img src="assets/images/favicon/preloader.gif" alt="preloader">
+		</div>
+		<!-- Preloader end -->
+		<!-- Header start -->
+		<header id="top-header">
+			<div class="header-wrap">
+				<div class="header-back">
+					<a href="javascript:history.go(-1)">
+						<img src="assets/svg/black-left-arrow.svg" alt="back-btn-icon">
+					</a>
+				</div>
+				<div class="header-name">
+					<p class="sm-font-zen fw-400">LINKED ACCOUNTS</p>
+				</div>
+			</div>
+		</header>
+		<!-- Header end -->
+		<!-- Linked account screen start -->
+		<div class="verify-email pb-20" id="linked-account-main">
+			<div class="container">
+				<div class="linked-account-content">
+					<h1 class="d-none">Linked Account</h1>
+					<div class="linked-account-first border-bottom2">
+						<div class="linked-account-logo">
+							<img src="assets/images/payment/google-icon.svg" alt="google-icon">
+						</div>
+						<div class="account-txt">
+							<p>Google</p>
+						</div>
+						<div class="account-type">
+							<p class="pay-txt" onclick="toggleConnection(this)">Connected</p>
+						</div>
+					</div>
+					<div class="linked-account-first border-bottom2">
+						<div class="linked-account-logo">
+							<img src="assets/images/payment/apple-icon.svg" alt="apple-icon">
+						</div>
+						<div class="account-txt">
+							<p>Apple</p>
+						</div>
+						<div class="account-type">
+							<p class="pay-txt" onclick="toggleConnection(this)">Connected</p>
+						</div>
+					</div>
+					<div class="linked-account-first border-bottom2">
+						<div class="linked-account-logo">
+							<img src="assets/images/payment/facebook-icon.svg" alt="facebook-icon">
+						</div>
+						<div class="account-txt">
+							<p>Facebook</p>
+						</div>
+						<div class="account-type">
+							<p class="pay-txt" onclick="toggleConnection(this)">Connected</p>
+						</div>
+					</div>
+					<div class="linked-account-first border-bottom2">
+						<div class="linked-account-logo">
+							<img src="assets/images/payment/twitter-icon.svg" alt="twitter-icon">
+						</div>
+						<div class="account-txt">
+							<p>Twitter</p>
+						</div>
+						<div class="account-type">
+							<p onclick="toggleConnection(this)" class="pay-txt not-connect">Not Connected</p>
+						</div>
+					</div>
+					<div class="linked-account-first border-bottom2">
+						<div class="linked-account-logo">
+							<img src="assets/images/payment/instragram-icon.svg" alt="instagram-icon">
+						</div>
+						<div class="account-txt">
+							<p>Instagram</p>
+						</div>
+						<div class="account-type">
+							<p onclick="toggleConnection(this)" class="pay-txt not-connect">Not Connected</p>
+						</div>
+					</div>
+					<div class="linked-account-first">
+						<div class="linked-account-logo">
+							<img src="assets/images/payment/tiktok-icon.svg" alt="tiktok-icon">
+						</div>
+						<div class="account-txt">
+							<p>TikTok</p>
+						</div>
+						<div class="account-type">
+							<p onclick="toggleConnection(this)" class="pay-txt not-connect">Not Connected</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Linked account screen end -->
+	</div>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+</body>
+</html>

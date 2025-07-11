@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEvoice</title>
+    <link rel="icon" href="assets/images/svg/favicon.svg">
+    <link rel="stylesheet" href="assets/css/swap.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media_query.css">
+</head>
+
+<body>
+    <div class="site_content">
+        <!-- ====================================== Preloader ===================================== -->
+        <div class="page-loader" id="page-loader">
+            <img src="assets/images/svg/logo.svg" alt="logo">
+            <p class="loade-text" data-text="WEvoice">WEvoice</p>
+        </div>
+        <!-- ====================================== Header ===================================== -->
+        <header id="top-navbar" class="lets-section site_lr-spacer">
+            <a href="javascript:history.go(-1)">
+                <img class="nav-header back-btn" src="assets/images/svg/back-btn-top.svg" alt="back-btn-top">
+            </a>
+        </header>
+        <!-- ====================================== Profile Details Screen Start ===================================== -->
+        <section class="section-main section-main-ver">
+            <h1 class="lets-text join-mani">Complete Profile 👤</h1>
+            <p class="into into-sub">Your profile is your canvas - express yourself!</p>
+
+            <div class="camera-main">
+                <div class="circle-img-girl">
+                    <img class="profile-pic" src="assets/images/personal-info-screen/profile-img.jpg" alt="profile-img">
+                </div>
+                <div class="camera-img-main">
+                    <img class="upload-button" src="assets/images/svg/camera.svg" alt="camera">
+                </div>
+                <input class="file-upload" type="file" accept="image/*">
+            </div>
+            <div class="inpt-la-main">
+                <label for="name" class="sign-text-nam">Name</label>
+                <div class="sign-input-main">
+                    <div class="media-icons-lets">
+                        <img src="assets/images/svg/person-icon.svg" alt="person-icon">
+                    </div>
+                    <input type="text" id="name" placeholder="Your Name" name="name" autocomplete="off">
+                </div>
+            </div>
+            <div class="inpt-la-main">
+                <label for="email" class="sign-text-nam">Email</label>
+                <div class="sign-input-main">
+                    <div class="media-icons-lets">
+                        <img src="assets/images/svg/email.svg" alt="email">
+                    </div>
+                    <input type="email" id="email" placeholder="Email Address" name="email" autocomplete="off">
+                </div>
+            </div>
+            <div class="inpt-la-main">
+                <label for="datepicker" class="sign-text-nam">BIRTH DATE</label>
+                <div class="sign-input-main">
+                    <div class="media-icons-lets">
+                        <img src="assets/images/svg/calendar.svg" alt="calendar">
+                    </div>
+                    <input type="text" id="datepicker" placeholder="DD/MM/YYYY" name="date" autocomplete="off">
+                </div>
+            </div>
+            <div class="inpt-la-main">
+                <label for="gender" class="sign-text-nam">GENDER</label>
+                <div class="sign-input-main">
+                    <div class="media-icons-lets">
+                        <img src="assets/images/svg/gender.svg" alt="gender">
+                    </div>
+                    <div class="custom-dropdown">
+                        <input type="text" id="gender" placeholder="Select Gender" name="gender" autocomplete="off"
+                            readonly>
+                        <span class="dropdown-arrow">
+                            <img src="assets/images/svg/dropdown.svg" alt="dropdown">
+                        </span>
+                        <div class="dropdown-options">
+                            <div class="dropdown-option" data-value="Male">Male</div>
+                            <div class="dropdown-option" data-value="Female">Female</div>
+                            <div class="dropdown-option" data-value="Other">Other</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="button-main Verify-btn">
+            <a href="account-set.html" class="main-bg-color-btn">Continue</a>
+        </div>
+    </div>
+    <script src="assets/javascript/jquery.js"></script>
+    <script src="assets/javascript/slick.min.js"></script>
+    <script src="assets/javascript/bootstrap.min.js"></script>
+    <script src="assets/javascript/cal.min.js"></script>
+    <script src="assets/javascript/script.js"></script>
+    <script>
+        $("#datepicker").datepicker({
+            dateFormat: "dd-mm-yy"
+            , duration: "fast"
+        });
+    </script>
+</body>
+
+</html>

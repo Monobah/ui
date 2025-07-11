@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Vigor - Fitness & Workout App PWA HTML</title>
+	<link rel="icon" href="assets/images/favicon/icon.png">
+	<link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/all.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/media-query.css">
+</head>
+<body>
+	<div class="site-content">
+		<!-- Preloader start -->
+		<div class="preloader">
+			<img src="assets/images/favicon/preloader.gif" alt="preloader">
+		</div>
+		<!-- Preloader end -->
+		<!-- Header start -->
+		<header id="top-header">
+			<div class="header-wrap-home">
+				<div class="header-back">
+					<a href="javascript:history.go(-1)">
+						<img src="assets/svg/black-left-arrow.svg" alt="back-btn-icon">
+					</a>
+				</div>
+				<div class="header-name">
+					<p class="sm-font-zen fw-400">Report</p>
+				</div>
+				<div class="home-setting">
+					<a href="#offcanvasExample" data-bs-toggle="offcanvas"><img src="assets/svg/setting-icon.svg" alt="setting-icon"></a>
+				</div>
+			</div>
+		</header>
+		<!-- Header end -->
+		<!-- Bar chart screen content start -->
+		<div class="verify-email pb-80" id="bar-chart-main">
+			<div class="container">
+				<div class="workout-wrap mt-16">
+					<h1 class="d-none">Barchart</h1>
+					<div class="workout-first border-red text-center">
+						<img src="assets/images/workout-complete/workout.png" alt="workout-img">
+						<h2>86</h2>
+						<p>Workouts</p>
+					</div>
+					<div class="workout-first border-green text-center">
+						<img src="assets/images/workout-complete/minutes.png" alt="minutes-img">
+						<h2>1.5k</h2>
+						<p>minutes</p>
+					</div>
+					<div class="workout-first border-yellow text-center">
+						<img src="assets/images/workout-complete/kcal.png" alt="kcal-img">
+						<h2>16.2k</h2>
+						<p>kcal</p>
+					</div>
+				</div>
+				<div class="bar-chart mt-16">
+					<div class="statistic-overview">
+						<div class="statistic-overview-content">
+							<div class="statistic-first">
+								<h2>STATISTICS</h2>
+							</div>
+							<div class="statistic-second">
+								<div class="custom-select-internet mt-8">
+									<select name="persons" id="select-currency" class="arrow-icon">
+										<option>This Week</option>
+										<option>Half-yearly</option>
+										<option>Yearly</option>
+										<option>Quarterly </option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<canvas id="myChart" width="400" height="200"></canvas>
+				</div>
+				<div class="bar-chart mt-16">
+					<div class="statistic-overview">
+						<div class="statistic-overview-content">
+							<div class="statistic-first">
+								<h2>WEIGHT</h2>
+							</div>
+							<div class="statistic-second">
+								<div class="custom-select-internet mt-8">
+									<select name="persons" id="select-month" class="arrow-icon">
+										<option>Last 6 Months</option>
+										<option>2 Months</option>
+										<option>6 Months</option>
+										<option>12 Months </option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="chart-container">
+							<canvas id="weightChart"></canvas>
+						</div>
+					</div>
+				</div>
+				<div class="bar-chart mt-16">
+					<div class="statistic-overview">
+						<div class="statistic-overview-content">
+							<div class="statistic-first">
+								<h2>BMI (kg/m2)</h2>
+							</div>
+							<div class="statistic-second">
+								<div class="custom-select-internet mt-8">
+									<select name="persons" id="select-weight" class="arrow-icon">
+										<option>Today</option>
+										<option>Tomorrow</option>
+										<option>Yesterday</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="chart-bottom-img text-center mt-12">
+							<img src="assets/images/barchart/bmi-chart.png" alt="bar-chart-img">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Bar chart screen content end -->
+		<!-- Bottom tabbar content start -->
+		<div class="bottom-tabbar">
+			<div class="bottom-menu-svg-main">
+				<div class="bottom-menu-svg">
+					<div class="gol3">
+						<div class="add-to-cart-icon">
+							<a href="profile.html">
+								<img src="assets/images/homescreen/icon3.svg" alt="tabbar-icon">
+							</a>
+						</div>
+					</div>
+					<svg class="bottom-menu-svg-design" width="600" height="150" viewBox="0 0 375 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g filter="url(#filter0_b_1_27651)">
+							<path d="M188 46C205.673 46 220 31.6731 220 14C220 7.79231 224.732 1.14283 230.917 1.67204L360.364 12.7477C368.642 13.456 375 20.3816 375 28.6895V104H0V28.6961C0 20.3855 6.36254 13.4585 14.6432 12.7538L145.074 1.65329C151.266 1.12632 156 7.78564 156 14C156 31.6731 170.327 46 188 46Z" fill="#12151C"/>
+						</g>
+						<defs>
+							<filter id="filter0_b_1_27651" x="-24" y="-22.3761" width="423" height="150.376" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+								<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+								<feGaussianBlur in="BackgroundImageFix" stdDeviation="12"/>
+								<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1_27651"/>
+								<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1_27651" result="shape"/>
+							</filter>
+						</defs>
+					</svg>
+				</div>
+			</div>
+			<div class="navigation">
+				<ul class="listWrap">
+					<li class="list  ">
+						<a href="homescreen.html">
+							<i class="icon">
+								<img src="assets/images/homescreen/icon1.svg" alt="tabbar-icon">	
+							</i>
+							<span class="text"></span>
+						</a>
+					</li>
+					<li class="list">
+						<a href="discover-workouts.html">
+							<i class="icon">
+								<img src="assets/images/homescreen/icon2.svg" alt="tabbar-icon">
+							</i>
+							<span class="text"></span>
+						</a>
+					</li>
+					<li class="list active">
+						<a href="bar-chart.html">
+							<i class="icon">
+								<img src="assets/images/homescreen/icon4.svg" alt="tabbar-icon">	
+							</i>
+							<span class="text"></span>
+						</a>
+					</li>
+					<li class="list">
+						<a href="workout-history.html">
+							<i class="icon">
+								<img src="assets/images/homescreen/icon5.svg" alt="tabbar-icon">	
+							</i>
+							<span class="text"></span>
+						</a>
+					</li>
+				</ul>
+			</div> 
+		</div>
+		<!-- Bottom tabbar content end -->
+		<!--SideBar setting menu start -->
+		<div class="menu-sidebar details">
+			<div class="offcanvas offcanvas-start custom-offcanvas-noti" id="offcanvasExample">
+				<div class="offcanvas-header custom-header-offcanva">
+					<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body">
+					<div class="dropdown">
+						<div class="setting-page-full">
+							<div class="setting-page-wrapper">
+								<a href="workout-preferences.html">
+									<div class="send-money-contact-tab border-bottom1 pt-0  ">
+										<div class="setting-icon">
+											<img src="assets/images/setting/setting1.svg" alt="setting-icon">
+										</div>
+										<div class="setting-title">
+											<h3>Workout Preferences</h3>
+										</div>
+										<div class="contact-star">
+											<div class="star-favourite">
+												<img src="assets/svg/right-arrow.svg" alt="edit-icon">
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="billing-subscription.html">
+									<div class="send-money-contact-tab border-bottom1 ">
+										<div class="setting-icon">
+											<img src="assets/images/setting/setting2.svg" alt="setting-icon">
+										</div>
+										<div class="setting-title">
+											<h3>Billing & Subscriptions</h3>
+										</div>
+										<div class="contact-star">
+											<div class="star-favourite">
+												<img src="assets/svg/right-arrow.svg" alt="edit-icon">
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="set-biometric.html">
+									<div class="send-money-contact-tab border-bottom1">
+										<div class="setting-icon">
+											<img src="assets/images/setting/setting7.svg" alt="setting-icon">
+										</div>
+										<div class="setting-title">
+											<h3>Set biometric</h3>
+										</div>
+										<div class="contact-star">
+											<div class="star-favourite">
+												<img src="assets/svg/right-arrow.svg" alt="edit-icon">
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="payment-method.html">
+									<div class="send-money-contact-tab border-bottom1 ">
+										<div class="setting-icon">
+											<img src="assets/images/setting/setting3.svg" alt="setting-icon">
+										</div>
+										<div class="setting-title">
+											<h3>Payment Methods</h3>
+										</div>
+										<div class="contact-star">
+											<div class="star-favourite">
+												<img src="assets/svg/right-arrow.svg" alt="edit-icon">
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="linked-account.html">
+									<div class="send-money-contact-tab border-bottom1 ">
+										<div class="setting-icon">
+											<img src="assets/images/setting/setting4.svg" alt="setting-icon">
+										</div>
+										<div class="setting-title">
+											<h3>Linked Accounts</h3>
+										</div>
+										<div class="contact-star">
+											<div class="star-favourite">
+												<img src="assets/svg/right-arrow.svg" alt="edit-icon">
+											</div>
+										</div>
+									</div>
+								</a>
+								<div class="Char-content border-bottom1">
+									<div class="send-money-contact-tab ">
+										<div class="setting-icon">
+											<img src="assets/images/setting/setting3.svg" alt="setting-icon">
+										</div>
+										<div class="setting-title">
+											<h3>Different Chart</h3>
+										</div>
+										<div class="contact-star">
+											<div class="star-favourite">
+												<img src="assets/svg/up-arrow.svg" alt="edit-icon">
+											</div>
+										</div>
+									</div>
+									<div class="diffrent-chat-dropdown">
+										<ul>
+											<li><a href="area-chart.html">Area Chat</a></li>
+											<li class="border-0"><a href="line-chart.html ">Line Chat</a></li>
+										</ul>
+									</div>
+								</div>
+								<a href="data-analytics.html">
+									<div class="send-money-contact-tab  pb-0">
+										<div class="setting-icon">
+											<img src="assets/images/setting/setting5.svg" alt="setting-icon">
+										</div>
+										<div class="setting-title">
+											<h3>Data & Analytics</h3>
+										</div>
+										<div class="contact-star">
+											<div class="star-favourite">
+												<img src="assets/svg/right-arrow.svg" alt="edit-icon">
+											</div>
+										</div>
+									</div>
+								</a>
+								<div class="setting-center-border"></div>
+								<a href="profile.html">
+									<div class="send-money-contact-tab border-bottom1 pt-0">
+										<div class="setting-icon">
+											<img src="assets/images/setting/setting6.svg" alt="setting-icon">
+										</div>
+										<div class="setting-title">
+											<h3>Personal Info</h3>
+										</div>
+										<div class="contact-star">
+											<div class="star-favourite">
+												<img src="assets/svg/right-arrow.svg" alt="edit-icon">
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="security.html">
+									<div class="send-money-contact-tab border-bottom1">
+										<div class="setting-icon">
+											<img src="assets/images/setting/setting7.svg" alt="setting-icon">
+										</div>
+										<div class="setting-title">
+											<h3>Security</h3>
+										</div>
+										<div class="contact-star">
+											<div class="star-favourite">
+												<img src="assets/svg/right-arrow.svg" alt="edit-icon">
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="language.html">
+									<div class="send-money-contact-tab border-bottom1">
+										<div class="setting-icon">
+											<img src="assets/images/setting/setting8.svg" alt="setting-icon">
+										</div>
+										<div class="setting-title">
+											<h3>Language</h3>
+										</div>
+										<div class="contact-star">
+											<div class="star-favourite">
+												<span class="setting-lanuage">
+													English (US)
+												</span>
+												<span>
+													<img src="assets/svg/right-arrow.svg" alt="edit-icon">
+												</span>
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="currency.html">
+									<div class="send-money-contact-tab border-bottom1">
+										<div class="setting-icon">
+											<img src="assets/images/setting/setting18.svg" alt="setting-icon">
+										</div>
+										<div class="setting-title">
+											<h3>Currency</h3>
+										</div>
+										<div class="contact-star">
+											<div class="star-favourite">
+												<span class="setting-lanuage">
+													USD
+												</span>
+												<span>
+													<img src="assets/svg/right-arrow.svg" alt="edit-icon">
+												</span>
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="faq.html">
+									<div class="send-money-contact-tab border-bottom1 ">
+										<div class="setting-icon">
+											<img src="assets/images/setting/setting9.svg" alt="setting-icon">
+										</div>
+										<div class="setting-title">
+											<h3>FAQs</h3>
+										</div>
+										<div class="contact-star">
+											<div class="star-favourite">
+												<img src="assets/svg/right-arrow.svg" alt="edit-icon">
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="data-privacy.html">
+									<div class="send-money-contact-tab border-bottom1 ">
+										<div class="setting-icon">
+											<img src="assets/images/setting/setting10.svg" alt="setting-icon">
+										</div>
+										<div class="setting-title">
+											<h3>Data & Privacy Policy</h3>
+										</div>
+										<div class="contact-star">
+											<div class="star-favourite">
+												<img src="assets/svg/right-arrow.svg" alt="edit-icon">
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="about-us.html">
+									<div class="send-money-contact-tab border-bottom1">
+										<div class="setting-icon">
+											<img src="assets/images/setting/setting11.svg" alt="setting-icon">
+										</div>
+										<div class="setting-title">
+											<h3>About Vigor</h3>
+										</div>
+										<div class="contact-star">
+											<div class="star-favourite">
+												<span class="setting-lanuage">
+													v2.0.2
+												</span>
+												<span>
+													<img src="assets/svg/right-arrow.svg" alt="edit-icon">
+												</span>
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="feedback.html">
+									<div class="send-money-contact-tab border-bottom1 ">
+										<div class="setting-icon">
+											<img src="assets/images/setting/setting12.svg" alt="setting-icon">
+										</div>
+										<div class="setting-title">
+											<h3>Send Feedback</h3>
+										</div>
+										<div class="contact-star">
+											<div class="star-favourite">
+												<img src="assets/svg/right-arrow.svg" alt="edit-icon">
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="contact-us.html">
+									<div class="send-money-contact-tab border-bottom1 ">
+										<div class="setting-icon">
+											<img src="assets/images/setting/setting13.svg" alt="setting-icon">
+										</div>
+										<div class="setting-title">
+											<h3>Contact Us</h3>
+										</div>
+										<div class="contact-star">
+											<div class="star-favourite">
+												<img src="assets/svg/right-arrow.svg" alt="edit-icon">
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="Invite-friend.html">
+									<div class="send-money-contact-tab border-bottom1 ">
+										<div class="setting-icon">
+											<img src="assets/images/setting/setting15.svg" alt="setting-icon">
+										</div>
+										<div class="setting-title">
+											<h3>Invite Friends</h3>
+										</div>
+										<div class="contact-star">
+											<div class="star-favourite">
+												<img src="assets/svg/right-arrow.svg" alt="edit-icon">
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="delete-deactivate-account.html">
+									<div class="send-money-contact-tab border-bottom1 ">
+										<div class="setting-icon bg-red">
+											<img src="assets/images/setting/setting16.svg" alt="setting-icon">
+										</div>
+										<div class="setting-title">
+											<h3>Delete or Deactivate Account</h3>
+										</div>
+										<div class="contact-star">
+											<div class="star-favourite">
+												<img src="assets/svg/right-arrow.svg" alt="edit-icon">
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#workout-complete-modal">
+									<div class="send-money-contact-tab">
+										<div class="setting-icon bg-red">
+											<img src="assets/images/setting/setting17.svg" alt="setting-icon">
+										</div>
+										<div class="setting-title">
+											<h3>Logout</h3>
+										</div>
+										<div class="contact-star">
+											<div class="star-favourite">
+												<img src="assets/svg/right-arrow.svg" alt="edit-icon">
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--SideBar setting menu end -->
+		<!-- Logout modal start -->
+		<div class="modal fade" id="workout-complete-modal" tabindex="-1"  aria-hidden="true">
+			<div class="modal-dialog ">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="account-upgrade-remind text-center" >
+							<img src="assets/images/setting/logout-img.png" alt="logout-img">
+							<h3 class="logout-txt pt-16">Logout</h3>
+							<p class="sure-txt p-0 mt-12">Are you sure you want to log out?</p>
+							<div class="border mt-24"></div>
+							<div class="workout-bottom-btn-wrap mt-24">
+								<div class="home-btn">
+									<a href="homescreen.html">CANCEL</a>
+								</div>
+								<div class="report-btn">
+									<a href="splashscreen.html">LOGOUT</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Logout modal end-->
+	</div>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/chart.js"></script>
+	<script src="assets/js/custom.js"></script>
+	<script>
+		const ctx = document.getElementById('myChart').getContext('2d');
+		const tooltip = document.createElement('div');
+		tooltip.classList.add('custom-tooltip');
+		document.body.appendChild(tooltip);
+		const data = {
+			labels: ['12', '13', '14', '15', '16', '17', '18'],
+			datasets: [
+			{
+				label: 'Workouts',
+				backgroundColor: '#FB4945',
+				borderColor: '#FB4945',
+				pointBackgroundColor: '#FB4945',
+				pointBorderColor: '#fff',
+				pointRadius: 5,
+				pointHoverRadius: 7,
+				data: [0, 10, 5, 2, 20, 30, 45],
+				fill: false,
+				tension: 0.4
+			},
+			{
+				label: 'Minutes',
+				backgroundColor: '#00A266',
+				borderColor: '#00A266',
+				pointBackgroundColor: '#00A266',
+				pointBorderColor: '#fff',
+				pointRadius: 5,
+				pointHoverRadius: 7,
+				data: [30, 20, 25, 22, 15, 10, 5],
+				fill: false,
+				tension: 0.4
+			},
+			{
+				label: 'Kcal',
+				backgroundColor: '#FFAA01',
+				borderColor: '#FFAA01',
+				pointBackgroundColor: '#FFAA01',
+				pointBorderColor: '#fff',
+				pointRadius: 5,
+				pointHoverRadius: 7,
+				data: [20, 30, 25, 35, 40, 50, 60],
+				fill: false,
+				tension: 0.4
+			}
+			]
+		};
+		const options = {
+			scales: {
+				x: {
+					grid: {
+						display: false
+					},
+					ticks: {
+						display: true,
+						color: 'black'
+					}
+				},
+				y: {
+					grid: {
+						display: false
+					},
+					ticks: {
+						display: false
+					}
+				}
+			},
+			plugins: {
+				tooltip: {
+					enabled: false,
+					mode: 'index',
+					intersect: false,
+					external: function(context) {
+						const tooltipModel = context.tooltip;
+
+						if (tooltipModel.opacity === 0) {
+							tooltip.style.display = 'none';
+							return;
+						}
+
+						tooltip.style.display = 'block';
+						tooltip.innerHTML = `
+						<div class="emoji">👊</div>7 Workouts<br>
+						<div class="emoji">⏰</div>60 Minutes<br>
+						<div class="emoji">🔥</div>900 kcal
+						`;
+
+						const position = context.chart.canvas.getBoundingClientRect();
+						tooltip.style.left = position.left + window.pageXOffset + tooltipModel.caretX + 'px';
+						tooltip.style.top = position.top + window.pageYOffset + tooltipModel.caretY + 'px';
+					}
+				}
+			},
+			elements: {
+				point: {
+					radius: 5,
+					hoverRadius: 7,
+					backgroundColor: 'white',
+					borderColor: '#000',
+					borderWidth: 1
+				},
+				line: {
+					borderWidth: 3
+				}
+			}
+		};
+		const myChart = new Chart(ctx, {
+			type: 'line',
+			data: data,
+			options: options
+		});
+	</script>
+	<script src="assets/js/weight.js"></script>
+	<script src="assets/js/Chart.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$(document).on('click', '.send-money-contact-tab', function() {
+				$(this).next(".diffrent-chat-dropdown").toggle();
+			});
+		});
+	</script>
+</body>
+</html>

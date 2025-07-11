@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Zoop Retails Store</title>
+	<link rel="icon" href="assets/images/favicon/icon.png">
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/all.min.css">
+	<link rel="stylesheet" href="assets/css/slick.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/pricing-slider.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/media-query.css">
+</head>
+<body>
+	<div class="site-content">
+		<!-- Preloader Start -->
+		<div class="loader-mask">
+			<div class="circle">
+			</div>
+		</div>
+		<!-- Preloader End -->
+		<!-- Header Start -->
+		<header id="top-header">
+			<div class="container">
+				<div class="top-header-full">
+					<div class="back-btn">
+						<a href="javascript:history.go(-1)">
+							<img src="assets/svg/back-btn.svg" alt="back-btn">
+						</a>
+					</div>
+					<div class="header-title">
+						<p>Filter</p>
+					</div>
+				</div>
+			</div>
+			<div class="navbar-boder"></div>
+		</header>
+		<!-- Header End -->
+		<!-- Filter Screen Start -->
+		<section id="filter-screen">
+			<h1 class="d-none">Filter Screen</h1>
+			<div class="container" >
+				<div class="filter-first">
+					<div class="filter-first-full">
+						<form class="select-filter mt-32">
+							<div class="filter-sec">
+								<input type="radio" id="select-lang1" name="select-language" checked >
+								<label class="custom-radio-sel-filter" for="select-lang1" >Sale</label>
+							</div>
+							<div class="filter-sec">
+								<input type="radio"  id="select-lang2" name="select-language" >
+								<label class="custom-radio-sel-filter" for="select-lang2">Trending</label>
+							</div>
+							<div class="filter-sec">
+								<input type="radio"  id="select-lang3" name="select-language" >
+								<label class="custom-radio-sel-filter" for="select-lang3">New</label>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="filter-second mt-32"> 
+				<div class="filter-second-full">
+					<p class="filter-title">Category</p>
+					<form class="select-category mt-16">
+						<div class="category-sec">
+							<input type="radio" id="category1" name="category" checked >
+							<label class="custom-radio-sel-category" for="category1" >All</label>
+						</div>
+						<div class="category-sec">
+							<input type="radio"  id="category2" name="category" >
+							<label class="custom-radio-sel-category" for="category2">Clothes</label>
+						</div>
+						<div class="category-sec">
+							<input type="radio"  id="category3" name="category" >
+							<label class="custom-radio-sel-category" for="category3">Electronics</label>
+						</div>
+						<div class="category-sec">
+							<input type="radio"  id="category4" name="category" >
+							<label class="custom-radio-sel-category" for="category4">Cosmetics</label>
+						</div>
+						<div class="category-sec">
+							<input type="radio"  id="category5" name="category" >
+							<label class="custom-radio-sel-category" for="category5">Fitness</label>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="filter-third mt-32"> 
+				<div class="container">
+					<div class="filter-modal" id="filterModal">
+						<div class="filter-box">
+							<p class="filter-title">Price:</p>
+							<div class="filter-content">
+								<div class="range-slider pricing-slider">
+									<input type="text" class="js-range-slider" value="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="filter-fourth-sec mt-32">
+				<div class="container">
+					<div class="filter-fourth-full">
+						<p class="filter-title">Rating</p>
+					</div>
+				</div>
+				<div class="review-bottom filter-review">
+					<div class="review-desc">
+						<div class="review-sec">
+							<input type="radio" id="clothes-size1" name="select-language" >
+							<label class="custom-radio-sel-review" for="clothes-size1">
+								<img src="assets/svg/orange-star16.svg" alt="star-img" class="review-star">
+							All</label>
+						</div>
+						<div class="review-sec">
+							<input type="radio" id="clothes-size2" name="select-language" checked>
+							<label class="custom-radio-sel-review" for="clothes-size2">
+								<img src="assets/svg/orange-star16.svg" alt="star-img" class="review-star">
+							5</label>
+						</div>
+						<div class="review-sec">
+							<input type="radio" id="clothes-size3" name="select-language">
+							<label class="custom-radio-sel-review" for="clothes-size3">
+								<img src="assets/svg/orange-star16.svg" alt="star-img" class="review-star">
+							4</label>
+						</div>
+						<div class="review-sec">
+							<input type="radio" id="clothes-size4" name="select-language">
+							<label class="custom-radio-sel-review" for="clothes-size4">
+								<img src="assets/svg/orange-star16.svg" alt="star-img" class="review-star">
+							3</label>
+						</div>
+						<div class="review-sec">
+							<input type="radio" id="clothes-size5" name="select-language">
+							<label class="custom-radio-sel-review" for="clothes-size5">
+								<img src="assets/svg/orange-star16.svg" alt="star-img" class="review-star">
+							2</label>
+						</div>
+						<div class="review-sec">
+							<input type="radio" id="clothes-size6" name="select-language">
+							<label class="custom-radio-sel-review" for="clothes-size6">
+								<img src="assets/svg/orange-star16.svg" alt="star-img" class="review-star">
+							1</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="filter-btn">
+				<a href="javascript:history.go(-1)">Filter</a>
+			</div>
+		</section>
+		<!-- Filter Screen End -->
+	</div>
+	<script src="assets/js/jquery-min-3.6.0.js"></script>
+	<script src="assets/js/slick.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/pricing-slider.js"></script>
+	<script src="assets/js/custom.js"></script>
+</body>
+</html>

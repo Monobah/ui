@@ -1,0 +1,177 @@
+
+
+<script setup>
+useHead({
+  title: "Real Estate Company Invoice",
+})
+
+
+import pdfUrl from "~/assets/img/invoice.pdf";
+
+const downloadPdf = () => {
+  // create element <a> for download PDF
+  const link = document.createElement('a');
+  link.href = pdfUrl;
+  link.target = '_blank';
+  link.download = pdfUrl;
+
+  // Simulate a click on the element <a>
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
+
+
+</script>
+
+<template>
+  <div class="cs-container">
+    <div class="cs-bg-white cs-border-radious25">
+      <div class="cs-bottom-bg">
+        <div class="cs-top-bg">
+          <div class="cs-invoice cs-style1 cs-no_border cs-p-25-50  cs-bg-none">
+            <div>
+              <div class="cs-invoice_in" id="download_section">
+                <div class="display-flex space-between cs-type1 cs-mb50 cs-no_border flex-wrap">
+                  <div class="cs-invoice_left">
+                    <p class="cs-invoice_number cs-primary_color cs-mb0 cs-f16"><b class="cs-primary_color">Invoice
+                        No:</b> #SM75692</p>
+                  </div>
+                  <div class="display-flex align-item-center flex-wrap">
+                    <div class="cs-logo cs-mr10 max-width90 cs"><img src="~/assets/img/logo.svg" alt="Logo"></div>
+                    <p class="cs-semi_bold cs-primary_color cs-f20 cs-mt25">IVONNE</p>
+                  </div>
+                </div>
+                <div class="display-flex cs-mb20 flex-wrap">
+                  <div class="cs-invoice_left cs-width_8">
+                    <b class="cs-primary_color">BILLED TO:</b>
+                    <p>
+                      Johan Smith <br> Ivonne Company, <br> 365 Bloor Street East, Toronto, <br> Ontario, M4W 3L4,
+                      Canada <br> subscriber@email.com
+                    </p>
+                  </div>
+                  <div class="cs-invoice_right">
+                    <b class="cs-primary_color">INVOICE:</b>
+                    <p>
+                      Invoice # TMT-C-2023-0808 <br> Invoice Date 08 July 2023 <br> Invoice Amount $229.00 (USD) <br>
+                      Customer ID 0708130246
+                    </p>
+                  </div>
+                </div>
+                <div class="cs-table cs-style2 tm-border-none padding-rignt-left">
+                  <div class="tm-border-none">
+                    <div class="cs-table_responsive">
+                      <table class="cs-mb30">
+                        <div class="tm-border-1px"></div>
+                        <thead class="border-bottom-1 cs-mb50">
+                          <tr class="cs-secondary_color">
+                            <th class="cs-width_5 cs-normal">DESCRIPTION</th>
+                            <th class="cs-width_2 cs-normal">PRICE</th>
+                            <th class="cs-width_2 cs-normal">DISCOUNT</th>
+                            <th class="cs-width_2 cs-normal cs-text_right">AMOUNT USD</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="border-bottom-1">
+                            <td class="cs-width_5 cs-primary_color cs-f15">
+                              TM-PREMIUM-PKG05
+                            </td>
+                            <td class="cs-width_2 cs-primary_color cs-f15">$140.00</td>
+                            <td class="cs-width_2 cs-primary_color cs-f15">0%</td>
+                            <td class="cs-width_2 cs-text_right cs-primary_color cs-f15">$140.00</td>
+                          </tr>
+                          <tr class="border-bottom-1">
+                            <td class="cs-width_5 cs-primary_color cs-f15">
+                              TM-PREMIUM-PKG02765
+                            </td>
+                            <td class="cs-width_2 cs-primary_color cs-f15">$199.00</td>
+                            <td class="cs-width_2 cs-primary_color cs-f15">0%</td>
+                            <td class="cs-width_2 cs-text_right cs-primary_color cs-f15">$199.00</td>
+                          </tr>
+                          <tr class="border-bottom-1">
+                            <td class="cs-width_5 cs-primary_color cs-f15">
+                              TM-SILVER-PKG045
+                            </td>
+                            <td class="cs-width_2 cs-primary_color cs-f15">$229.00</td>
+                            <td class="cs-width_2 cs-primary_color cs-f15">40%</td>
+                            <td class="cs-width_2 cs-text_right cs-primary_color cs-f15">$137.40</td>
+                          </tr>
+                          <tr class="border-bottom-1">
+                            <td class="cs-width_5 cs-primary_color cs-f15">
+                              TM-GOLDEN-PKG0527
+                            </td>
+                            <td class="cs-width_2 cs-primary_color cs-f15">$160.00</td>
+                            <td class="cs-width_2 cs-primary_color cs-f15">0%</td>
+                            <td class="cs-width_2 cs-text_right cs-primary_color cs-f15">$160.00</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="display-flex space-between cs-mb80">
+                  <div class="cs-mt100">
+                    <div class="display-flex">
+                      <div>
+                        <b class="cs-primary_color">William Stark</b>
+                        <p>Project Manager</p>
+                        <p class="cs-border-50percent"></p>
+                        <img src="~/assets/img/signature.png" alt="...">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cs-width_4">
+                    <p class="cs-secondary_color cs-text_right cs-f15">Total: <span
+                        class="cs-ml30 cs-primary_color cs-semi_bold">$636.4</span> </p>
+                    <p class="cs-secondary_color cs-text_right cs-f15">Payments: <span
+                        class=" cs-ml30 cs-primary_color cs-semi_bold">$636.4</span> </p>
+                    <div class="cs-border-50percent"></div>
+                    <p class="cs-secondary_color cs-text_right cs-f15 cs-mt15">Amount Due: <span
+                        class="cs-ml30 cs-primary_color cs-semi_bold">$0.00</span> </p>
+                    <div class="cs-border-50percent"></div>
+                  </div>
+                </div>
+                <div class="display-flex space-between cs-mb15">
+                  <p class="cs-primary_color">All amounts shown on this invoice are in US dollars. <br> The total sales
+                    figure shown is your sales less any reversals or refunds.</p>
+                  <div class="display-flex justify-content">
+                    <button @click="downloadPdf" id="download_btn" class="cs-invoice_btn btn-blanck cs-primary_color">
+                      <svg class="cs-primary_color ionicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <title>Download</title>
+                        <path
+                          d="M336 176h40a40 40 0 0140 40v208a40 40 0 01-40 40H136a40 40 0 01-40-40V216a40 40 0 0140-40h40"
+                          fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                          stroke-width="32" />
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                          stroke-width="32" d="M176 272l80 80 80-80M256 48v288" />
+                      </svg>
+                      <span>Download</span>
+                    </button>
+                    <div class="cs-m0 tm-align-item-center cs-invoice_btns tm-align-item-center cs-hide_print cs-p0">
+                      <a href="javascript:window.print()" class="cs-invoice_btn cs-p0">
+                        <svg class="cs-primary_color ionicon cs_primary_color" xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512">
+                          <path
+                            d="M384 368h24a40.12 40.12 0 0040-40V168a40.12 40.12 0 00-40-40H104a40.12 40.12 0 00-40 40v160a40.12 40.12 0 0040 40h24"
+                            fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32" />
+                          <rect x="128" y="240" width="256" height="208" rx="24.32" ry="24.32" fill="none"
+                            stroke="currentColor" stroke-linejoin="round" stroke-width="32" />
+                          <path d="M384 128v-24a40.12 40.12 0 00-40-40H168a40.12 40.12 0 00-40 40v24" fill="none"
+                            stroke="currentColor" stroke-linejoin="round" stroke-width="32" />
+                          <circle cx="392" cy="184" r="24" />
+                        </svg>
+                        <span class="cs-primary_color">Print</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</template>
+ 

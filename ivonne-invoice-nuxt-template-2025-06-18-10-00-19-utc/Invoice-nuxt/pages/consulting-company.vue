@@ -1,0 +1,200 @@
+
+
+<script setup>
+useHead({
+  title: "Consulting Company",
+})
+
+
+import pdfUrl from "~/assets/img/invoice.pdf";
+
+const downloadPdf = () => {
+  // create element <a> for download PDF
+  const link = document.createElement('a');
+  link.href = pdfUrl;
+  link.target = '_blank';
+  link.download = pdfUrl;
+
+  // Simulate a click on the element <a>
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
+
+
+</script>
+
+
+<template>
+  <div class="cs-container tm-consulting">
+    <div class="cs-invoice cs-style1">
+      <div class="cs-invoice_in" id="download_section">
+        <div class="cs-type1 cs-mb25 flex-horizontal-center space-between">
+          <div class="cs-invoice_left">
+            <div class="cs-logo cs-mb5 tm-align-item-center flex-wrap">
+              <img class="cs-mr20 max-width120" src="~/assets/img/logo.svg" alt="Logo">
+              <div class="tm-right-logo">
+                <p class="cs-invoice_number cs-primary_color cs-mb3 cs-f18">Invoice No:
+                  <Span class="cs-semi_bold">#SM75692</Span>
+                </p>
+                <div class="display-flex">
+                  <svg class=" cs-mr5" width="19" height="19" viewBox="0 0 19 19" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15.2456 3.8999H14.4956V2.3999C14.4956 2.20099 14.4166 2.01022 14.2759 1.86957C14.1353 1.72892 13.9445 1.6499 13.7456 1.6499C13.5467 1.6499 13.3559 1.72892 13.2153 1.86957C13.0746 2.01022 12.9956 2.20099 12.9956 2.3999V3.8999H6.99561V2.3999C6.99561 2.20099 6.91659 2.01022 6.77594 1.86957C6.63528 1.72892 6.44452 1.6499 6.24561 1.6499C6.04669 1.6499 5.85593 1.72892 5.71528 1.86957C5.57462 2.01022 5.49561 2.20099 5.49561 2.3999V3.8999H4.74561C4.14887 3.8999 3.57657 4.13696 3.15462 4.55891C2.73266 4.98087 2.49561 5.55317 2.49561 6.1499V6.8999H17.4956V6.1499C17.4956 5.55317 17.2586 4.98087 16.8366 4.55891C16.4146 4.13696 15.8423 3.8999 15.2456 3.8999Z"
+                      fill="#353535" />
+                    <path
+                      d="M2.49561 14.3999C2.49561 14.9966 2.73266 15.5689 3.15462 15.9909C3.57657 16.4129 4.14887 16.6499 4.74561 16.6499H15.2456C15.8423 16.6499 16.4146 16.4129 16.8366 15.9909C17.2586 15.5689 17.4956 14.9966 17.4956 14.3999V8.3999H2.49561V14.3999Z"
+                      fill="#353535" />
+                  </svg>
+                  <p class="cs-mb0 cs-f14">
+                    Issued Date: 31-09-2023</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tm-align-item-center">
+            <div class="tm-button-gray tm-border">
+              <a href="">Pay Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="tm-border-1px cs-mb30"></div>
+        <div class="display-flex cs-mb30 flex-wrap gap-135">
+          <div class="cs-invoice_left">
+            <b class="cs-primary_color cs-f16">Invoice From:</b>
+            <p>Jennifer Richards <br /> 365 Bloor Street East, Toronto, <br /> Ontario, M4W 3L4, <br /> Canada
+            </p>
+          </div>
+          <div class="cs-invoice_right">
+            <b class="cs-primary_color cs-f16">Invoice To:</b>
+            <p>
+              237 Roanoke Road, North York, <br /> Ontario, Canada <br /> demo@email.com
+            </p>
+          </div>
+        </div>
+        <div class="tm-consult-container tm-bg-gray tm-border-radious-12 tm-border cs-mb50 tm-custom-td-padding">
+          <div class="cs-invoice_head cs-mb10 cs-table_responsive">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="cs-no_border">
+                    Account Number:
+                  </td>
+                  <td class="cs-text_right cs-no_border cs-primary_color cs-f14 cs-semi_bold"><span id="myText1">11 1111
+                      2222 3333 4444</span><span class="copybtn" id="copybtn1">&nbsp; <svg
+                        xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                        <path
+                          d="M10.7774 0.581055C10.7154 0.581055 4.77734 0.581055 4.77734 0.581055C3.71933 0.581055 2.77735 1.55156 2.77735 2.58107L2.19935 2.59456C1.14184 2.59456 0.277344 3.55155 0.277344 4.58105V14.5811C0.277344 15.6106 1.21935 16.5811 2.27736 16.5811H9.77736C10.8353 16.5811 11.7773 15.6106 11.7773 14.5811H12.2773C13.3354 14.5811 14.2774 13.6106 14.2774 12.5811V4.59306L10.7774 0.581055ZM9.77736 15.5811H2.27736C1.75235 15.5811 1.27736 15.0906 1.27736 14.5811V4.58105C1.27736 4.07156 1.70486 3.59755 2.22986 3.59755L2.77735 3.58106V12.5811C2.77735 13.6106 3.71933 14.5811 4.77734 14.5811H10.7774C10.7774 15.0906 10.3023 15.5811 9.77736 15.5811ZM13.2774 12.5811C13.2774 13.0905 12.8023 13.581 12.2773 13.581H4.77734C4.25234 13.581 3.77735 13.0906 3.77735 12.5811V2.58107C3.77735 2.07158 4.25234 1.58107 4.77734 1.58107H9.77736C9.76933 2.73257 9.77736 3.59357 9.77736 3.59357C9.77736 4.63257 10.7123 5.58107 11.7773 5.58107C11.7773 5.58107 12.3084 5.58107 13.2774 5.58107V12.5811ZM11.7773 4.58105C11.2449 4.58105 10.7774 3.61357 10.7774 3.09456C10.7774 3.09456 10.7774 2.56855 10.7774 1.59656V1.59555L13.2774 4.58105H11.7773ZM10.7774 7.59007H6.27736C6.00136 7.59007 5.77736 7.81357 5.77736 8.08957C5.77736 8.36556 6.00136 8.58906 6.27736 8.58906H10.7774C11.0533 8.58906 11.2773 8.36554 11.2773 8.08957C11.2773 7.81357 11.0533 7.59007 10.7774 7.59007ZM10.7774 10.0876H6.27736C6.00136 10.0876 5.77736 10.3111 5.77736 10.587C5.77736 10.8631 6.00136 11.0866 6.27736 11.0866H10.7774C11.0533 11.0866 11.2773 10.8631 11.2773 10.587C11.2773 10.3111 11.0533 10.0876 10.7774 10.0876Z"
+                          fill="#2AD19D" />
+                      </svg></span>
+                  </td>
+
+                </tr>
+                <tr>
+                  <td class="cs-no_border cs-f15">
+                    Reference Number:
+                  </td>
+                  <td class="cs-text_right cs-no_border cs-primary_color cs-f14 cs-semi_bold">
+
+                    <span id="myText2">#SM2475692</span><span class="copybtn" id="copybtn2">&nbsp; <svg
+                        xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                        <path
+                          d="M10.7774 0.581055C10.7154 0.581055 4.77734 0.581055 4.77734 0.581055C3.71933 0.581055 2.77735 1.55156 2.77735 2.58107L2.19935 2.59456C1.14184 2.59456 0.277344 3.55155 0.277344 4.58105V14.5811C0.277344 15.6106 1.21935 16.5811 2.27736 16.5811H9.77736C10.8353 16.5811 11.7773 15.6106 11.7773 14.5811H12.2773C13.3354 14.5811 14.2774 13.6106 14.2774 12.5811V4.59306L10.7774 0.581055ZM9.77736 15.5811H2.27736C1.75235 15.5811 1.27736 15.0906 1.27736 14.5811V4.58105C1.27736 4.07156 1.70486 3.59755 2.22986 3.59755L2.77735 3.58106V12.5811C2.77735 13.6106 3.71933 14.5811 4.77734 14.5811H10.7774C10.7774 15.0906 10.3023 15.5811 9.77736 15.5811ZM13.2774 12.5811C13.2774 13.0905 12.8023 13.581 12.2773 13.581H4.77734C4.25234 13.581 3.77735 13.0906 3.77735 12.5811V2.58107C3.77735 2.07158 4.25234 1.58107 4.77734 1.58107H9.77736C9.76933 2.73257 9.77736 3.59357 9.77736 3.59357C9.77736 4.63257 10.7123 5.58107 11.7773 5.58107C11.7773 5.58107 12.3084 5.58107 13.2774 5.58107V12.5811ZM11.7773 4.58105C11.2449 4.58105 10.7774 3.61357 10.7774 3.09456C10.7774 3.09456 10.7774 2.56855 10.7774 1.59656V1.59555L13.2774 4.58105H11.7773ZM10.7774 7.59007H6.27736C6.00136 7.59007 5.77736 7.81357 5.77736 8.08957C5.77736 8.36556 6.00136 8.58906 6.27736 8.58906H10.7774C11.0533 8.58906 11.2773 8.36554 11.2773 8.08957C11.2773 7.81357 11.0533 7.59007 10.7774 7.59007ZM10.7774 10.0876H6.27736C6.00136 10.0876 5.77736 10.3111 5.77736 10.587C5.77736 10.8631 6.00136 11.0866 6.27736 11.0866H10.7774C11.0533 11.0866 11.2773 10.8631 11.2773 10.587C11.2773 10.3111 11.0533 10.0876 10.7774 10.0876Z"
+                          fill="#2AD19D" />
+                      </svg></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="cs-no_border">
+                    Pay By:
+                  </td>
+                  <td class="cs-text_right cs-no_border cs-primary_color cs-f14 cs-semi_bold cs-ml10">
+                    07-8-2023 <span class="tm-bg-gray tm-caption-txt cs-ml10">7 days Overdue</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="cs-table cs-style2 cs-mb50">
+          <div class="cs-round_border tm-border-radious-12">
+            <div class="cs-table_responsive">
+              <table>
+                <thead>
+                  <tr class="tm-bg-gray tm-border tm-consult-thead">
+                    <th class="cs-width_5 cs-semi_bold cs-primary_color">Items</th>
+                    <th class="cs-width_2 cs-semi_bold cs-primary_color">Price</th>
+                    <th class="cs-width_2 cs-semi_bold cs-primary_color">QTY</th>
+                    <th class="cs-width_2 cs-semi_bold cs-primary_color cs-text_right">Total Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="cs-width_5 cs-primary_color cs-f15">
+                      Consultation
+                    </td>
+                    <td class="cs-width_2 cs-primary_color cs-f15">$560</td>
+                    <td class="cs-width_2 cs-primary_color cs-f15">01</td>
+                    <td class="cs-width_2 cs-text_right cs-primary_color cs-f15">$560</td>
+                  </tr>
+                  <tr>
+                    <td class="cs-width_5 cs-primary_color cs-f15">
+                      Strategy
+                    </td>
+                    <td class="cs-width_2 cs-primary_color">$860</td>
+                    <td class="cs-width_2 cs-primary_color">01</td>
+                    <td class="cs-width_2 cs-text_right cs-primary_color cs-f15">$860</td>
+                  </tr>
+                  <tr>
+                    <td class="cs-width_5 cs-primary_color cs-f15">
+                      Total Inc. VAT
+                    </td>
+                    <td class="cs-width_2"></td>
+                    <td class="cs-width_2"></td>
+                    <td class="cs-width_2 cs-text_right cs-semi_bold cs-primary_color cs-f15">$1420</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="cs-invoice_head">
+          <div class="cs-note">
+            <div class="cs-note_right">
+              <p class="cs-m0">Here we can write a additional notes for the client to get a better understanding of this
+                invoice.
+              </p>
+            </div>
+          </div>
+          <!-- .cs-note -->
+          <div class="cs-invoice_btns cs-hide_print">
+            <a href="javascript:window.print()" class="cs-invoice_btn tm-bg-gray tm-border ">
+              <svg xmlns="http://www.w3.org/2000/svg" class="ionicon cs_primary_color" viewBox="0 0 512 512">
+                <path
+                  d="M384 368h24a40.12 40.12 0 0040-40V168a40.12 40.12 0 00-40-40H104a40.12 40.12 0 00-40 40v160a40.12 40.12 0 0040 40h24"
+                  fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32" />
+                <rect x="128" y="240" width="256" height="208" rx="24.32" ry="24.32" fill="none" stroke="currentColor"
+                  stroke-linejoin="round" stroke-width="32" />
+                <path d="M384 128v-24a40.12 40.12 0 00-40-40H168a40.12 40.12 0 00-40 40v24" fill="none"
+                  stroke="currentColor" stroke-linejoin="round" stroke-width="32" />
+                <circle cx="392" cy="184" r="24" />
+              </svg>
+              <span class="cs-primary_color">Print</span>
+            </a>
+            <button @click="downloadPdf" id="download_btn" class="cs-invoice_btn cs-color2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                <title>Download</title>
+                <path d="M336 176h40a40 40 0 0140 40v208a40 40 0 01-40 40H136a40 40 0 01-40-40V216a40 40 0 0140-40h40"
+                  fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+                  d="M176 272l80 80 80-80M256 48v288" />
+              </svg>
+              <span>Download</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+ 

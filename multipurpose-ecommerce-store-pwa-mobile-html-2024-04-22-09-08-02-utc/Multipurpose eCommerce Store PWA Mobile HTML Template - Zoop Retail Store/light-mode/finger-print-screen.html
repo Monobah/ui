@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Zoop Retails Store</title>
+	<link rel="icon" href="assets/images/favicon/icon.png">
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/all.min.css">
+	<link rel="stylesheet" href="assets/css/slick.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/media-query.css">
+</head>
+<body>
+	<div class="site-content">
+		<!-- Preloader Start -->
+		<div class="loader-mask">
+			<div class="circle">
+			</div>
+		</div>
+		<!-- Preloader End -->
+		<!-- Header Start -->
+		<header id="top-header">
+			<div class="container">
+				<div class="top-header-full">
+					<div class="back-btn">
+						<a href="javascript:history.go(-1)">
+							<img src="assets/svg/back-btn.svg" alt="back-btn">
+						</a>
+					</div>
+					<div class="header-title">
+						<p>Set Your Finger Print</p>
+					</div>
+				</div>
+			</div>
+			<div class="navbar-boder"></div>
+		</header>
+		<!-- Header End -->
+		<!-- Finger Print Screen Start -->
+		<section id="finger-print-sec">
+			<div class="container">
+				<h1 class="d-none">Finger Print</h1>
+				<div class="finger-print-sec-full">
+					<div class="finger-top">
+						<p>Add a finger print to make your account more secure.</p>	
+					</div>
+					<div class="finger-bottom">
+						<div class="finger-bottom-fingerprint">
+							<img src="assets/images/finger-print/finger-print.png" alt="finger-print">
+						</div>
+						<p class="print-txt">Please put your finger on the finger print scanner to get started</p>
+					</div>
+					<div class="finger-print-sec-btn">
+						<div class="finger-print-sec-btn-wrapp">
+							<div class="print-skip-btn">
+								<a href="pre-language-screen.html">Skip</a>
+							</div>
+							<div class="print-continue-btn">
+								<a href="#finger-print-modal" data-bs-toggle="modal">Continue</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Finger Print Screen End -->
+		<!-- Finger Print Screen Modal Start -->
+		<div class="modal fade" id="finger-print-modal" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content finger-modal-content">
+					<div class="modal-body">
+						<div class="finger-print-modal-popup">
+							<div class="finger-img-sec">
+								<img src="assets/images/finger-print/congratulations.png" alt="Congratulation-img">
+							</div>
+							<div class="finger-content-sec mt-32">
+								<h2>Congratulations!</h2>
+								<p>Your account is ready to use. You will be redirected to the next page in a few seconds.</p>
+								<div class="loader">
+									<div class="sk-fading-circle">
+										<div class="sk-circle1 sk-circle"></div>
+										<div class="sk-circle2 sk-circle"></div>
+										<div class="sk-circle3 sk-circle"></div>
+										<div class="sk-circle4 sk-circle"></div>
+										<div class="sk-circle5 sk-circle"></div>
+										<div class="sk-circle6 sk-circle"></div>
+										<div class="sk-circle7 sk-circle"></div>
+										<div class="sk-circle8 sk-circle"></div>
+										<div class="sk-circle9 sk-circle"></div>
+										<div class="sk-circle10 sk-circle"></div>
+										<div class="sk-circle11 sk-circle"></div>
+										<div class="sk-circle12 sk-circle"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Finger Print Screen Modal End -->
+	</div>
+	<script src="assets/js/jquery-min-3.6.0.js"></script>
+	<script src="assets/js/slick.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+	<script>	
+		$(".print-continue-btn").on("click" , function () {
+			$('.loader').fadeIn();
+			$('.loader').fadeOut(3000);
+			setTimeout(function(){
+				window.location = "pre-language-screen.html";
+			}, 
+			2000); 
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Vigor - Fitness & Workout App PWA HTML</title>
+	<link rel="icon" href="assets/images/favicon/icon.png">
+	<link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/all.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/media-query.css">
+</head>
+<body>
+	<div class="site-content">
+		<!-- Header start -->
+		<header id="top-header" class="single-exercise-main" >
+			<div class="header-wrap-home">
+				<div class="header-logo-home">
+					<a href="javascript:void(0)">
+						<img src="assets/svg/close-icon.svg" alt="back-btn-icon">
+					</a>
+				</div>
+				<div class="header-name text-center">
+					<p class="sm-font-zen fw-400 ">2/7 EXERCISE</p>
+				</div>
+				<div class="home-setting" data-bs-toggle="modal" data-bs-target="#workout-complete-modal">
+					<a href="javascript:void(0)"><img src="assets/svg/sound-icon.svg" alt="setting-icon"></a>
+				</div>
+			</div>
+		</header>
+		<!-- Header end -->
+		<!-- Single exercise2 screen start-->
+		<div class="verify-email single-exercise2" id="single-exercise-main-bottom">
+			<div class="single-exercise-bottom container mt-24">
+				<div class="single-workout-tab-content">
+					<div class="nav nav-tabs overview-tabbar-main" id="nav-tab" role="tablist">
+						<button class="nav-link active" id="nav-animation-tab" data-bs-toggle="tab" data-bs-target="#animation" type="button" role="tab" aria-selected="true">Animation</button>
+						<button class="nav-link" id="nav-video-tab" data-bs-toggle="tab" data-bs-target="#video" type="button" role="tab" aria-selected="false" tabindex="-1">Video</button>
+					</div>
+				</div>
+				<div class="tab-content" id="nav-tabContent">
+					<div class="tab-pane show active" id="animation" role="tabpanel" tabindex="0" >
+						<div class="animation-tab-content mt-12">
+							<div class="exercise-img-sec bg-img text-center mt-16">
+								<img src="assets/images/single-exercise/animation2.png" alt="animation-img">
+							</div>
+							<div class="text-center mt-16 ">
+								<p class="md-font-sans fw-500 color-black">Side Lateral Raise<span class="info-img"><img src="assets/svg/info-icon.svg" alt="info-icon"></span></p>
+								<h1 class="single2-txt mt-24">x15</h1>
+							</div>
+							<div class="single-exercise2-bottom">
+								<div class="verify-number-btn">
+									<a href="javascript:void(0)"><span><img src="assets/svg/pause-icon.svg" alt="plus-icon" class="prev-icon"></span>PAUSE</a>
+								</div>
+								<div class="workout-bottom-btn-wrap mt-16">
+									<div class="home-btn">
+										<a href="single-exercise1.html"><span><img src="assets/svg/prev-icon.svg" alt="plus-icon" class="prev-icon"></span>PREV</a>
+									</div>
+									<div class="home-btn">
+										<a href="single-exercise3.html"><span>SKIP<img src="assets/svg/skip-icon.svg" alt="plus-icon" class="next-icon"></span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="video" role="tabpanel" tabindex="0">
+						<div class="video-tab-content mt-12">
+							<div class="exercise-img-sec bg-img text-center mt-16">
+								<img src="assets/images/single-exercise/video2.png" alt="animation-img">
+							</div>
+							<div class="text-center mt-16 ">
+								<p class="md-font-sans fw-500 color-black">Side Lateral Raise<span class="info-img"><img src="assets/svg/info-icon.svg" alt="info-icon"></span></p>
+								<h2 class="single2-txt mt-24">x15</h2>
+							</div>
+							<div class="single-exercise2-bottom">
+								<div class="verify-number-btn">
+									<a href="javascript:void(0)"><span><img src="assets/svg/pause-icon.svg" alt="plus-icon" class="prev-icon"></span>PAUSE</a>
+								</div>
+								<div class="workout-bottom-btn-wrap mt-16">
+									<div class="home-btn">
+										<a href="single-exercise1.html"><span><img src="assets/svg/prev-icon.svg" alt="plus-icon" class="prev-icon"></span>PREV</a>
+									</div>
+									<div class="home-btn">
+										<a href="single-exercise3.html"><span>SKIP<img src="assets/svg/skip-icon.svg" alt="plus-icon" class="next-icon"></span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Single exercise2 screen end -->
+		<!-- Sound modal start -->
+		<div class="modal fade" id="workout-complete-modal" tabindex="-1"  aria-hidden="true">
+			<div class="modal-dialog ">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="account-upgrade-remind text-center" >
+							<img src="assets/svg/card-down.svg" alt="card-down"   data-bs-dismiss="modal" >
+							<p class="sound-txt p-0 mt-12">Sound Settings</p>
+							<div class="border mt-24"></div>
+							<div class="sound-details">
+								<div class="new-invoice-modal-content mt-16">
+									<div class="sound-type">
+										<img src="assets/svg/mute-icon.svg" alt="send-icon">
+									</div>
+									<div class="sound-name">
+										<p class="pe-0">Mute Sound</p>
+									</div>
+									<div class="sound-switch">
+										<div class="notification-option-switch">
+											<label class="switch" for="switch1">
+												<input type="checkbox" id="switch1" checked>
+												<span class="slider "></span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="new-invoice-modal-content mt-16">
+									<div class="sound-type">
+										<img src="assets/svg/voice-guide-icon.svg" alt="send-icon">
+									</div>
+									<div class="sound-name">
+										<p class="pe-0">Enable Voice Guide</p>
+									</div> 
+									<div class="sound-switch">
+										<div class="notification-option-switch">
+											<label class="switch" for="switch2">
+												<input type="checkbox" id="switch2" checked>
+												<span class="slider "></span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="new-invoice-modal-content mt-16">
+									<div class="sound-type">
+										<img src="assets/svg/player-icon.svg" alt="send-icon">
+									</div>
+									<div class="sound-name">
+										<p class="pe-0">Enable Sound Effect</p>
+									</div>
+									<div class="sound-switch">
+										<div class="notification-option-switch">
+											<label class="switch" for="switch3">
+												<input type="checkbox" id="switch3" checked>
+												<span class="slider "></span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="workout-bottom-btn-wrap mt-24">
+								<div class="home-btn">
+									<a href="javascript:void(0)">CANCEL</a>
+								</div>
+								<div class="report-btn" data-bs-dismiss="modal">
+									<a href="javascript:void(0)">OK</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Sound modal end-->
+	</div>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+</body>
+</html>

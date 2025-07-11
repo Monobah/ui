@@ -1,0 +1,52 @@
+import {OrderType} from './OrderType';
+import {ReviewType} from './ReviewType';
+import {ProductType} from './ProductType';
+
+export type RootStackParamList = {
+  FAQ: undefined;
+  Filter: undefined;
+  SignIn: undefined;
+  SignUp: undefined;
+  Search: undefined;
+  Gravatar: undefined;
+  MyAddress: undefined;
+  Onboarding: undefined;
+  EditProfile: undefined;
+  OrderFailed: undefined;
+  AddANewCard: undefined;
+  OrderHistory: undefined;
+  LeaveAReview: undefined;
+  NewPassword: undefined;
+  MyPromocodes: undefined;
+  TabNavigator: undefined;
+  Notifications: undefined;
+  LeaveAReviews: undefined;
+  PaymentMethod: undefined;
+  ForgotPassword: undefined;
+  TrackYourOrder: undefined;
+  AddANewAddress: undefined;
+  OrderSuccessful: undefined;
+  ConfirmationCode: undefined;
+  Checkout: {order: OrderType};
+  Product: {item: ProductType};
+  MyPromocodesEmpty: undefined;
+  SignUpAccountCreated: undefined;
+  CheckoutPaymentMethod: undefined;
+  Reviews: {reviews: ReviewType[]};
+  VerifyYourPhoneNumber: undefined;
+  Description: {description: string};
+  ForgotPasswordSentEmail: undefined;
+  CheckoutShippingDetails: undefined;
+  ConfirmationCodeEmail: {email: string};
+  Shop: {title: string; products: ProductType[]};
+  // VERIFICATION
+  SendOtpToEmail: undefined;
+  SendOtpToPhone: undefined;
+  VerifyPhoneNumber: {phoneNumber: string};
+  VerifyEmailAddress: undefined;
+  // STATUS
+  NumberChanged: undefined;
+  AccountCreated: undefined;
+  PasswordChanged: undefined;
+  AccountCreatedFailed: undefined;
+};

@@ -1,0 +1,6 @@
+First of all, you need to set up an environment for react-native and laravel.
+You can find documentation on the following pages:
+
+React Native: https://reactnative.dev/docs/environment-setup
+Laravel: https://laravel.com/docs/10.x/installation
+Laravel Orchid: https://orchid.software/en/docs/installation/

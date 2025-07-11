@@ -1,0 +1,185 @@
+
+
+<script setup>
+useHead({
+  title: "Receipt Phone Purchase",
+})
+
+</script>
+
+
+<template>
+  <div class="cs-container style1">
+      <div class="cs-invoice cs-style1 padding_40">
+        <div class="cs-invoice_in" id="download_section">
+          <div>
+            <div class="cs-border cs-mb15"></div>
+            <div
+              class="cs-invoice_head cs-type1 column border-bottom-none cs-p0"
+            >
+              <div class="display-flex justify-content-center cs-width_12">
+                <div class="cs-text_center">
+                  <p class="cs-f14 cs-primary_color cs-bold cs-mb2">
+                    Mobile Phone Purchase Receipt
+                  </p>
+                  <p class="cs-mb0 cs-primary_color cs-f12">
+                    Ivonne Haven Electronics 789 Tech
+                  </p>
+                  <p class="cs-mb0 cs-primary_color cs-f12">
+                    Street, Tech City
+                  </p>
+                  <p class="cs-mb0 cs-primary_color cs-f12">
+                    Phone: (555) 123-4567
+                  </p>
+                  <p class="cs-mb0 cs-primary_color cs-f12">www.example.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cs-border cs-mb20 cs-mt12"></div>
+          <div class="cs-f12">
+            <div class="display-flex justify-content-space-between flex-wrap">
+              <div class="cs-width_6">
+                <div class="display-flex">
+                  <p class="cs-mb5">Date:&nbsp;</p>
+                  <p class="cs-primary_color cs-mb5">2023-08-10</p>
+                </div>
+                <div class="display-flex">
+                  <p class="cs-mb5">Salesperson:&nbsp;</p>
+                  <p class="cs-primary_color cs-mb5">Alex</p>
+                </div>
+              </div>
+              <div class="cs-width_6">
+                <div class="display-flex">
+                  <p class="cs-mb5">Time:&nbsp;</p>
+                  <p class="cs-primary_color cs-mb5">11:30 AM</p>
+                </div>
+                <div class="display-flex">
+                  <p>Order Number:&nbsp;</p>
+                  <p class="cs-primary_color">12345</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cs-border cs-mb10"></div>
+          <div class="cs-width_12 cs-f12">
+            <div class="display-flex">
+              <p class="cs-mb5">Customer:&nbsp;</p>
+              <p class="cs-primary_color cs-mb5">Jane Smith</p>
+            </div>
+            <div class="display-flex">
+              <p class="cs-mb5">Email:&nbsp;</p>
+              <p class="cs-primary_color cs-mb5">jane@example.com</p>
+            </div>
+            <div class="display-flex">
+              <p>Phone:&nbsp;</p>
+              <p class="cs-primary_color">(555) 987-6543</p>
+            </div>
+          </div>
+          <div class="cs-border"></div>
+          <div class="cs-table cs-style2 padding-rignt-left cs-f12">
+            <table>
+              <thead>
+                <tr class="cs-f12 cs-border_bottom style_1">
+                  <th class="cs-width_8 cs-normal cs-primary_color">Item</th>
+                  <th class="cs-normal cs-primary_color">Qty</th>
+                  <th class="cs-normal cs-primary_color cs-text_right">
+                    Price
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="cs-f12 tm-border-none">
+                <tr>
+                  <td class="cs-p0 cs-p-t10 cs-p-b5">
+                    1.Brand X Model A <br />
+                    Color: Midnight Black <br />
+                    Storage: 128GB
+                  </td>
+                  <td class="cs-primary_color cs-p0 cs-p-b5">&nbsp;1</td>
+                  <td class="cs-text_right cs-primary_color cs-p0 cs-p-b5">
+                    $599.00
+                  </td>
+                </tr>
+                <tr>
+                  <td class="cs-p0 cs-p-b5">2. Phone Case</td>
+                  <td class="cs-primary_color cs-p0 cs-p-b5">&nbsp;1</td>
+                  <td class="cs-text_right cs-primary_color cs-p0 cs-p-b5">
+                    $25.99
+                  </td>
+                </tr>
+                <tr>
+                  <td class="cs-p0 cs-p-b5">3. Screen Protector</td>
+                  <td class="cs-primary_color cs-p0 cs-p-b5">&nbsp;1</td>
+                  <td class="cs-text_right cs-primary_color cs-p0 cs-p-b5">
+                    $12.50
+                  </td>
+                </tr>
+                <tr>
+                  <td class="cs-p0 cs-p-b10">4. Wireless Charger</td>
+                  <td class="cs-primary_color cs-p0 cs-p-b10">&nbsp;1</td>
+                  <td class="cs-text_right cs-primary_color cs-p0 cs-p-b10">
+                    $29.95
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="cs-border"></div>
+          <div class="cs-table cs-style2 padding-rignt-left">
+            <table>
+              <tbody class="cs-f12 tm-border-none">
+                <tr>
+                  <td class="cs-p0 cs-p-t10 cs-p-b5">Subtotal:</td>
+                  <td
+                    class="cs-text_right cs-primary_color cs-p0 cs-p-t10 cs-p-b5"
+                  >
+                    $667.44
+                  </td>
+                </tr>
+                <tr>
+                  <td class="cs-p0 cs-p-b10">Tax (8%):</td>
+                  <td class="cs-text_right cs-primary_color cs-p0 cs-p-b10">
+                    $ 53.40
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="cs-border"></div>
+          <div class="cs-table cs-style2 padding-rignt-left">
+            <table>
+              <tbody class="cs-f12 tm-border-none">
+                <tr>
+                  <td class="cs-p0 cs-p-t10 cs-p-b10">Total</td>
+                  <td
+                    class="cs-text_right cs-primary_color cs-p0 cs-p-t10 cs-p-b10"
+                  >
+                    $720.84
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="cs-border cs-mb15"></div>
+          <div class="cs-width_12 cs-f12">
+            <div class="display-flex">
+              <p class="cs-mb5">Payment Method:&nbsp;</p>
+              <p class="cs-primary_color cs-m0">Credit Card</p>
+            </div>
+            <div class="display-flex">
+              <p class="cs-mb10">Card Ending:&nbsp;</p>
+              <p class="cs-primary_color cs-m0">**** 5678</p>
+            </div>
+          </div>
+
+          <div class="cs-border cs-mb30"></div>
+          <p class="cs-text_center cs-f16 cs-primary_color">
+            Thank you for shopping with us!
+          </p>
+        </div>
+      </div>
+    </div>
+</template>
+
+ 

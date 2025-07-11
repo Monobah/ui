@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Zoop Retails Store</title>
+	<link rel="icon" href="assets/images/favicon/icon.png">
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/all.min.css">
+	<link rel="stylesheet" href="assets/css/slick.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/media-query.css">
+</head>
+<body>
+	<div class="site-content">
+		<!-- Preloader Start -->
+		<div class="loader-mask">
+			<div class="circle">
+			</div>
+		</div>
+		<!-- Preloader End -->
+		<!--Header Start -->
+		<header id="top-navbar" class="top-navbar"> 
+			<div class="container">
+				<div class="top-navbar_full">
+					<div class="back-btn">
+						<a href="#offcanvasExample" data-bs-toggle="offcanvas">
+							<img src="assets/svg/setting-icon.svg" alt="setting-icon">
+						</a>
+					</div>
+					<div class="top-navbar-title">
+						<p>My Account</p>
+					</div>
+					<div class="skip_btn notification-badge-btn">
+						<a href="notification.html">
+							<img src="assets/svg/notification-icon.svg" alt="notification-icon">
+							<div class="notification-badge"></div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="navbar-boder"></div>
+		</header>
+		<!--Header End -->
+		<!--Account Screen Start -->
+		<section id="account-screen-page">
+			<h1 class="d-none">Account Screen</h1>
+			<h2 class="d-none">Account</h2>
+			<div class="container">
+				<div class="account-screen-page-full mt-32">
+					<div class="account-screen-first">
+						<div class="account-screen-img">
+							<img src="assets/images/account-screen/client-img.png" alt="client-img">
+						</div>
+						<div class="account-screen-content">
+							<h3>Jessica Smith</h3>
+							<p>Freelancer</p>
+						</div>
+						<div class="account-screen-edit">
+							<a href="profile-edit-screen.html">
+								<img src="assets/svg/edit-icon.svg" alt="edit-icon">
+							</a>
+						</div>
+					</div>
+					<div class="account-screen-second">
+						<div class="account-screen-second-full">
+							<a href="wallet-screen.html">
+								<div class="account-wrapper">
+									<div class="account-img">
+										<img src="assets/images/account-screen/wallet.svg" alt="wallet-icon">
+									</div>
+									<div class="account-content">
+										<p>My Wallet</p>
+									</div>
+									<div class="account-back-btn">
+										<img src="assets/svg/right-icon.svg" alt="right-icon">
+									</div>
+								</div>
+							</a>
+							<a href="myorder2.html">
+								<div class="account-wrapper">
+									<div class="account-img">
+										<img src="assets/images/account-screen/order.svg" alt="order-icon">
+									</div>
+									<div class="account-content">
+										<p>My Orders</p>
+									</div>
+									<div class="account-back-btn">
+										<img src="assets/svg/right-icon.svg" alt="right-icon">
+									</div>
+								</div>
+							</a>
+							<a href="payment-method.html">
+								<div class="account-wrapper">
+									<div class="account-img">
+										<img src="assets/images/account-screen/payment.svg" alt="payment-icon">
+									</div>
+									<div class="account-content">
+										<p>Payment Methods</p>
+									</div>
+									<div class="account-back-btn">
+										<img src="assets/svg/right-icon.svg" alt="right-icon">
+									</div>
+								</div>
+							</a>
+							<a href="address-screen.html">
+								<div class="account-wrapper">
+									<div class="account-img">
+										<img src="assets/images/account-screen/address.svg" alt="address-icon">
+									</div>
+									<div class="account-content">
+										<p>Delivery Address</p>
+									</div>
+									<div class="account-back-btn">
+										<img src="assets/svg/right-icon.svg" alt="right-icon">
+									</div>
+								</div>
+							</a>
+							<a href="my-promocode.html">
+								<div class="account-wrapper">
+									<div class="account-img">
+										<img src="assets/images/account-screen/gift.svg" alt="gift-icon">
+									</div>
+									<div class="account-content">
+										<p>Promocodes & Gift Cards</p>
+									</div>
+									<div class="account-back-btn">
+										<img src="assets/svg/right-icon.svg" alt="right-icon">
+									</div>
+								</div>
+							</a>
+							<a href="log-out.html">
+								<div class="account-wrapper">
+									<div class="account-img">
+										<img src="assets/images/account-screen/log-out.svg" alt="logout-icon">
+									</div>
+									<div class="account-content">
+										<p>Logout</p>
+									</div>
+									<div class="account-back-btn">
+										<img src="assets/svg/right-icon.svg" alt="right-icon">
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</section>
+		<!--Account Screen End -->
+		<!--SideBar Setting Menu -->
+		<div class="menu-sidebar details">
+			<div class="offcanvas offcanvas-start custom-offcanvas-noti" id="offcanvasExample">
+				<div class="offcanvas-header custom-header-offcanva">
+					<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body">
+					<div class="dropdown">
+						<div class="setting-page-full">
+							<div class="setting-page-wrapper">
+								<a href="homescreen-2.html">
+									<div class="setting-deatils">
+										<div class="setting-icon">
+											<img src="assets/images/setting-screen/setting-1.svg" alt="log-out-icon">
+										</div>
+										<div class="icon-name">
+											<p>Homepage2</p>
+										</div>
+										<div class="icon-back-btn">
+											<img src="assets/svg/right-icon.svg" alt="right-icon">
+										</div>
+									</div>
+									<div class="setting-border mt-8"></div>
+								</a>
+								<a href="notification-option-screen.html" class="mt-8">
+									<div class="setting-deatils">
+										<div class="setting-icon">
+											<img src="assets/images/setting-screen/setting-2.svg" alt="log-out-icon">
+										</div>
+										<div class="icon-name">
+											<p>Notification Options</p>
+										</div>
+										<div class="icon-back-btn">
+											<img src="assets/svg/right-icon.svg" alt="right-icon">
+										</div>
+									</div>
+									<div class="setting-border mt-8"></div>
+								</a>
+								<a href="language-screen.html" class="mt-8">
+									<div class="setting-deatils">
+										<div class="setting-icon">
+											<img src="assets/images/setting-screen/setting-3.svg" alt="log-out-icon">
+										</div>
+										<div class="icon-name">
+											<p>Language</p>
+										</div>
+										<div class="icon-back-btn">
+											<img src="assets/svg/right-icon.svg" alt="right-icon">
+										</div>
+									</div>
+									<div class="setting-border mt-8"></div>
+								</a>
+								<a href="currency-screen.html" class="mt-8">
+									<div class="setting-deatils">
+										<div class="setting-icon">
+											<img src="assets/images/setting-screen/setting-4.svg" alt="log-out-icon">
+										</div>
+										<div class="icon-name">
+											<p>Currency</p>
+										</div>
+										<div class="icon-back-btn">
+											<img src="assets/svg/right-icon.svg" alt="right-icon">
+										</div>
+									</div>
+									<div class="setting-border mt-8"></div>
+								</a>
+								<a href="about-us-screen.html" class="mt-8">
+									<div class="setting-deatils">
+										<div class="setting-icon">
+											<img src="assets/images/setting-screen/setting-5.svg" alt="log-out-icon">
+										</div>
+										<div class="icon-name">
+											<p>About Us</p>
+										</div>
+										<div class="icon-back-btn">
+											<img src="assets/svg/right-icon.svg" alt="right-icon">
+										</div>
+									</div>
+									<div class="setting-border mt-8"></div>
+								</a>
+								<a href="privacy-screen.html" class="mt-8">
+									<div class="setting-deatils">
+										<div class="setting-icon">
+											<img src="assets/images/setting-screen/setting-6.svg" alt="logout-icon">
+										</div>
+										<div class="icon-name">
+											<p>Privacy Policy</p>
+										</div>
+										<div class="icon-back-btn">
+											<img src="assets/svg/right-icon.svg" alt="right-icon">
+										</div>
+									</div>
+									<div class="setting-border mt-8"></div>
+								</a>
+								<a href="faq-section.html" class="mt-8">
+									<div class="setting-deatils">
+										<div class="setting-icon">
+											<img src="assets/images/setting-screen/setting-7.svg" alt="logout-icon">
+										</div>
+										<div class="icon-name">
+											<p>FAQs</p>
+										</div>
+										<div class="icon-back-btn">
+											<img src="assets/svg/right-icon.svg" alt="right-icon">
+										</div>
+									</div>
+									<div class="setting-border mt-8"></div>
+								</a>
+								<a href="feedback.html" class="mt-8">
+									<div class="setting-deatils">
+										<div class="setting-icon">
+											<img src="assets/images/setting-screen/setting-8.svg" alt="logout-icon">
+										</div>
+										<div class="icon-name">
+											<p>Send Feedback</p>
+										</div>
+										<div class="icon-back-btn">
+											<img src="assets/svg/right-icon.svg" alt="right-icon">
+										</div>
+									</div>
+									<div class="setting-border mt-8"></div>
+								</a>
+								<a href="contact-us.html" class="mt-8">
+									<div class="setting-deatils">
+										<div class="setting-icon">
+											<img src="assets/images/setting-screen/setting-9.svg" alt="logout-icon">
+										</div>
+										<div class="icon-name">
+											<p>Contact Us</p>
+										</div>
+										<div class="icon-back-btn">
+											<img src="assets/svg/right-icon.svg" alt="right-icon">
+										</div>
+									</div>
+									<div class="setting-border mt-8"></div>
+								</a>
+								<div class="setting-deatils theme-change mt-8">
+									<div class="setting-icon ">
+										<div class="dz-icon theme-btn bg-pink light">
+											<img src="assets/images/setting-screen/dark-mode.svg" class="dark" alt="dark">
+										</div>
+									</div>
+									<div class="icon-name " >
+										<p>Dark Mode</p>
+									</div>
+									<div class="icon-back-btn"> 
+										<img src="assets/svg/right-icon.svg" alt="right-icon">
+									</div>
+								</div>
+								<div class="setting-border mt-8"></div>
+								<a href="invite-friend.html" class="mt-8">
+									<div class="setting-deatils">
+										<div class="setting-icon">
+											<img src="assets/images/setting-screen/setting-10.svg" alt="logout-icon">
+										</div>
+										<div class="icon-name">
+											<p>Invite Friends</p>
+										</div>
+										<div class="icon-back-btn">
+											<img src="assets/svg/right-icon.svg" alt="right-icon">
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--SideBar Setting Menu -->
+		<!--Bottom TabBar Section Start -->
+		<div class="bottom-tabbar">
+			<div class="bottom-tabbar-full">
+				<nav>
+					<a href="homescreen-1.html">
+						<img src="assets/images/tabbar/home.svg" alt="home-icon">
+						<span>
+							Home
+						</span>
+					</a>
+					<a href="search-screen.html">
+						<img src="assets/images/tabbar/search.svg" alt="search-icon">
+						<span>
+							Search
+						</span>
+					</a>
+					<a href="cart-without-promocode.html">
+						<img src="assets/images/tabbar/cart.svg" alt="cart-icon">
+						<span>
+							Cart(2)
+						</span>
+					</a>
+					<a href="wishlist-screen.html" >
+						<img src="assets/images/tabbar/wishlist.svg" alt="wishlist-icon">
+						<span>
+							Wishlist
+						</span>
+					</a>
+					<a href="account-screen.html" class="active">
+						<img src="assets/images/tabbar/account.svg" alt="account-icon">
+						<span>
+							Account
+						</span>
+					</a>
+				</nav>
+			</div>
+		</div>
+		<!--Bottom TabBar Section End -->
+	</div>
+	<script src="assets/js/jquery-min-3.6.0.js"></script>
+	<script src="assets/js/slick.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+</body>
+</html>

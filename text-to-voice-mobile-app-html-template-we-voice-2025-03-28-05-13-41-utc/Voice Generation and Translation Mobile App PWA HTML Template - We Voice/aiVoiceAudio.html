@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEvoice</title>
+    <link rel="icon" href="assets/images/svg/favicon.svg">
+    <link rel="stylesheet" href="assets/css/swap.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media_query.css">
+</head>
+
+<body>
+    <div class="site_content">
+        <!-- ====================================== Preloader ===================================== -->
+        <div class="page-loader" id="page-loader">
+            <img src="assets/images/svg/logo.svg" alt="logo">
+            <p class="loade-text" data-text="WEvoice">WEvoice</p>
+        </div>
+        <!-- ====================================== Header ===================================== -->
+        <header id="top-navbar" class="site_lr-spacer homeHeader-main">
+            <div class="back-with-text border-bottom-0">
+                <a href="javascript:history.go(-1)">
+                    <img class="nav-header back-btn" src="assets/images/svg/back-btn-top.svg" alt="back-btn-top">
+                </a>
+                <div class="header-title">
+                    <h1>AI Voice Translate</h1>
+                </div>
+            </div>
+        </header>
+        <!-- ====================================== AI Voice Audio Screen Start ===================================== -->
+        <section class="section-main section-main-ver mt-3">
+            <div class="kjao-mian">
+                <h2 class="expor-ciomp pt-0">Upload Audio File 🎵</h2>
+                <p class="skjao">Upload your audio file to get started.</p>
+            </div>
+            <div class="music-container">
+                <div class="spectrum" id="spectrum"></div>
+                <div class="button-main music-player">
+                    <div class="progress-container">
+                        <input type="range" id="progress" value="0" min="0" max="100">
+                    </div>
+                    <div class="time-container">
+                        <span id="current-time">00:00</span>
+                        <span id="total-time">00:15</span>
+                    </div>
+                    <button class="play-pause-btn pulse" id="playPause">
+                        <span class="play-icon">
+                            <img src="assets/images/svg/music-pause-btn-white.svg" alt="music-pause-btn-white">
+                        </span>
+                        <span class="pause-icon">
+                            <img src="assets/images/svg/white-play-btn.svg" alt="white-play-btn">
+                        </span>
+                    </button>
+                    <div class="misuo-pla">
+                        <a href="#" class="skip-btn" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasBottom">Share</a>
+                        <a href="select-language.html" class="main-bg-color-btn" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasDownload">Download</a>
+                    </div>
+                </div>
+            </div>
+            <audio id="audio">
+                <source src="assets/audio/music2.mp3" type="audio/mp3">
+            </audio>
+        </section>
+        <div class="button-main Verify-btn">
+            <a href="selectaiVoice.html" class="main-bg-color-btn">Continue</a>
+        </div>
+    </div>
+    <script src="assets/javascript/jquery.js"></script>
+    <script src="assets/javascript/slick.min.js"></script>
+    <script src="assets/javascript/bootstrap.min.js"></script>
+    <script src="assets/javascript/spectrum-music.js"></script>
+    <script src="assets/javascript/script.js"></script>
+</body>
+
+</html>
